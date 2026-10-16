@@ -5,7 +5,7 @@
   },
   "tagline": {
     "en": "Human Natural Peptide Discovery on a Global Scale",
-    "zh": "在全球尺度上发现人类天然肽"
+    "zh": "在全景尺度上发掘人类天然多肽"
   },
   "description": {
     "en": "The QZhao Lab at the Department of Life Sciences, The Hong Kong Polytechnic University, discovers and characterizes natural peptides in human cells.",
@@ -20,7 +20,7 @@
   "heroImage": "images/hero-bg.jpg",
   "summary": {
     "en": "Our research lies at the interface of chemical biology and proteomics. Combining synthetic chemistry, biology and mass spectrometry, we discover and characterize natural peptides in human cells, from functional peptides encoded by small open reading frames to immunopeptides presented on the cell surface, and investigate how they shape biology and disease.",
-    "zh": "课题组的研究位于化学生物学与蛋白质组学的交叉领域。我们结合合成化学、生物学与质谱技术，发现并解析人类细胞中的天然肽，包括由小开放阅读框（基因组中较短、可被翻译成蛋白质的序列）编码的功能性肽，以及呈递在细胞表面的免疫肽，并探索它们在生理与疾病中的作用。"
+    "zh": "课题组的研究位于化学生物学与蛋白质组学的交叉领域。我们结合合成化学、生物学与质谱技术，发现并解析人类细胞中的天然肽，包括由小开放阅读框（基因组中较短、可被翻译成蛋白质的序列）编码的功能性多肽，以及呈递在细胞表面的免疫肽，并探索它们在生理与疾病中的作用。"
   },
   "homeNewsCount": 3,
   "contact": {
