@@ -1,8 +1,11 @@
 {{/* One publication entry. Context: a map from data/publications.json. */}}
 {{ $p := . }}
 {{ $highlight := site.Data.site.highlightAuthors | default slice }}
+{{/* Markers can be given by name ("corresponding", "equal") or, when names repeat or differ, by 1-based author position ("correspondingPositions", "equalPositions"). */}}
 {{ $corr := $p.corresponding | default slice }}
 {{ $equal := $p.equal | default slice }}
+{{ $corrPos := $p.correspondingPositions | default slice }}
+{{ $equalPos := $p.equalPositions | default slice }}
 <li class="pub">
   <p class="pub-title">
     {{ with $p.doi }}<a href="https://doi.org/{{ . }}">{{ $p.title }}</a>{{ else }}{{ with $p.url }}<a href="{{ . }}">{{ $p.title }}</a>{{ else }}{{ $p.title }}{{ end }}{{ end }}
@@ -11,8 +14,8 @@
     {{- range $i, $a := $p.authors -}}
       {{- if $i }}, {{ end -}}
       {{- $mark := "" -}}
-      {{- if in $equal $a }}{{ $mark = print $mark "#" }}{{ end -}}
-      {{- if in $corr $a }}{{ $mark = print $mark "*" }}{{ end -}}
+      {{- if or (in $equal $a) (in $equalPos (add $i 1)) }}{{ $mark = print $mark "#" }}{{ end -}}
+      {{- if or (in $corr $a) (in $corrPos (add $i 1)) }}{{ $mark = print $mark "*" }}{{ end -}}
       {{- if in $highlight $a }}<strong>{{ $a }}{{ $mark }}</strong>{{ else }}{{ $a }}{{ $mark }}{{ end -}}
     {{- end -}}
   </p>

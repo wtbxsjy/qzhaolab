@@ -79,8 +79,23 @@ if pubs is not None:
         for k in ("title", "journal", "year"):
             if not p.get(k):
                 problems.append(f"{where}: \"{k}\" is required")
-        if not isinstance(p.get("authors"), list) or not p.get("authors"):
+        authors = p.get("authors")
+        if not isinstance(authors, list) or not authors:
             problems.append(f"{where}: \"authors\" must be a list, e.g. [\"Chen L\", \"Zhao Q\"]")
+            continue
+        complete = authors[-1].strip().lower() not in ("et al.", "et al")
+        for key, pos_key, mark in (("corresponding", "correspondingPositions", "*"), ("equal", "equalPositions", "#")):
+            if complete:
+                for name in p.get(key, []):
+                    n = authors.count(name)
+                    if n != 1:
+                        problems.append(
+                            f"{where}: \"{key}\" name \"{name}\" matches {n} authors, so the {mark} mark "
+                            f"{'goes nowhere' if n == 0 else 'is ambiguous'}; use \"{pos_key}\": [author numbers, starting from 1] instead"
+                        )
+            for pos in p.get(pos_key, []):
+                if not isinstance(pos, int) or not 1 <= pos <= len(authors):
+                    problems.append(f"{where}: \"{pos_key}\" value {pos!r} is not an author number between 1 and {len(authors)}")
 
 news = load("news.json")
 if news is not None:

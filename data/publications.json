@@ -441,15 +441,15 @@
     "corresponding": [
       "Zhao Q"
     ],
-    "equal": [
-      "Yang Y",
-      "Wang HW"
-    ],
     "topics": [
       "peptidein"
     ],
     "volume": "22(1)",
-    "pages": "100480"
+    "pages": "100480",
+    "equalPositions": [
+      1,
+      2
+    ]
   },
   {
     "title": "Integrated Mass Spectrometry Reveals Celastrol As a Novel Catechol-O-methyltransferase Inhibitor",
@@ -471,13 +471,13 @@
     "corresponding": [
       "Zhao Q"
     ],
-    "equal": [
-      "Guo HJ",
-      "Zhang Q",
-      "Yang Y"
-    ],
     "volume": "17(8)",
-    "pages": "2003–2009"
+    "pages": "2003–2009",
+    "equalPositions": [
+      1,
+      2,
+      3
+    ]
   },
   {
     "title": "Deficiency of ribosomal proteins reshapes the transcriptional and translational landscape in human cells",
@@ -679,9 +679,9 @@
     "volume": "139(2)",
     "pages": "680–685",
     "doi": "10.1021/jacs.6b08536",
-    "equal": [
-      "Zhao Q",
-      "Ouyang XH"
+    "equalPositions": [
+      1,
+      2
     ]
   },
   {

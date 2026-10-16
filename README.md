@@ -114,7 +114,7 @@
 }
 ```
 
-`corresponding` 中的作者后面显示 `*`，`equal`（共同贡献）中的显示 `#`。`site.json` 中的 `highlightAuthors` 列出需要加粗的作者名。没有 DOI 时可以用 `"url"` 给出论文链接。
+`corresponding` 中的作者后面显示 `*`，`equal`（共同贡献）中的显示 `#`。如果作者列表里有同名作者（例如两位 `Yang Y`），或者 Crossref 给出的缩写和你写的不一致（例如 `Wang H` 与 `Wang HW`），按名字标注会标错或标不上。这时改用作者序号（从 1 开始数）：`"equalPositions": [1, 2]`、`"correspondingPositions": [9]`。数据检查会自动发现这类问题并提示。`site.json` 中的 `highlightAuthors` 列出需要加粗的作者名。没有 DOI 时可以用 `"url"` 给出论文链接。
 
 **迁移说明**：论文从旧网站迁移时只拿到了第一作者。第一次运行「Update publications」工作流会按 DOI 补全。以下 5 篇在旧网站上没有 DOI，需要手动补全作者和 DOI：*Biological Chemistry* 2021、*Nucleic Acids Research* 2021（小鼠翻译组）、*Cancer Research* 2021、*Science* 2018、*Proceedings of the National Academy of Sciences* 2018。其中 *Cancer Research* 2021 的标题在迁移时被截断，也需要补全。
 
