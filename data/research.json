@@ -1,0 +1,117 @@
+{
+  "intro": {
+    "en": "We combine chemical proteomics, mass spectrometry and bioinformatics to find the peptides human cells really make, and to learn what they do. Our work follows two connected directions.",
+    "zh": "我们结合化学蛋白质组学、质谱与生物信息学，寻找人类细胞真实产生的肽，并研究它们的功能。课题组的工作分为两个相互关联的方向。"
+  },
+  "highlightsTitle": {
+    "en": "Two directions, one goal",
+    "zh": "两个方向，一个目标"
+  },
+  "directions": [
+    {
+      "id": "peptidein",
+      "title": { "en": "Peptidein", "zh": "Peptidein" },
+      "summary": {
+        "en": "We use proteogenomics and mass spectrometry to reveal functional peptides and microproteins encoded by small open reading frames, and study their roles in human cells.",
+        "zh": "我们利用蛋白基因组学与质谱技术，发现由小开放阅读框编码的功能性肽和微蛋白，并研究它们在人类细胞中的作用。"
+      },
+      "image": "images/research/peptidein.jpg",
+      "imageAlt": {
+        "en": "Illustration of peptides and proteins packed inside a cell",
+        "zh": "细胞内密集分布的肽与蛋白质示意插画"
+      },
+      "intro": {
+        "en": "Thousands of short open reading frames across the genome were long dismissed as non-coding. We now know many of them are translated into peptides and microproteins with real biological functions. Our Peptidein program aims to find these molecules systematically and to understand what they do.",
+        "zh": "基因组中数以千计的小开放阅读框曾长期被视为不编码蛋白。现在我们知道，其中许多会被翻译成具有生物学功能的肽和微蛋白。Peptidein 方向的目标是系统地发现这些分子，并阐明它们的功能。"
+      },
+      "sections": [
+        {
+          "heading": { "en": "Approaches", "zh": "研究手段" },
+          "items": [
+            {
+              "en": "**Proteogenomics**: building custom sequence databases from genomic and translatomic data so that mass spectrometry can detect peptides absent from reference protein databases.",
+              "zh": "**蛋白基因组学**：根据基因组与翻译组数据构建定制的序列数据库，使质谱能够检测参考蛋白数据库中没有收录的肽段。"
+            },
+            {
+              "en": "**Optimized mass spectrometry workflows**, including data-independent acquisition, for deeper detection of low-abundance alternative proteins.",
+              "zh": "**优化的质谱流程**，包括数据非依赖采集，以更深入地检测低丰度的非经典蛋白。"
+            },
+            {
+              "en": "**Functional studies** of newly discovered microproteins in immune cells, development and cancer.",
+              "zh": "**功能研究**：在免疫细胞、发育及肿瘤中研究新发现的微蛋白。"
+            }
+          ]
+        },
+        {
+          "heading": { "en": "Recent findings", "zh": "近期发现" },
+          "items": [
+            {
+              "en": "Small open reading frames and functional microproteins in activated T cells.",
+              "zh": "活化 T 细胞中的小开放阅读框与功能性微蛋白。"
+            },
+            {
+              "en": "Alternative proteins in mouse cardiac and liver development.",
+              "zh": "小鼠心脏与肝脏发育过程中的非经典蛋白。"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "en": "",
+          "zh": "小开放阅读框（small open reading frame）：基因组中较短的、可被翻译成蛋白质的序列。"
+        },
+        {
+          "en": "",
+          "zh": "蛋白基因组学（proteogenomics）：把基因组、转录组等核酸测序数据与质谱蛋白质组数据结合起来分析的方法。"
+        },
+        {
+          "en": "",
+          "zh": "数据非依赖采集（data-independent acquisition）：一种质谱采集模式，系统地碎裂所有离子，而非只挑选信号最强的离子，有利于检测低丰度肽段。"
+        }
+      ]
+    },
+    {
+      "id": "immunopeptides",
+      "title": { "en": "Immunopeptides", "zh": "Immunopeptides" },
+      "summary": {
+        "en": "We map the peptides that human cells present to the immune system, including non-canonical peptides from small open reading frames, to understand immune recognition and inform tumor immunotherapy.",
+        "zh": "我们绘制人类细胞呈递给免疫系统的肽段图谱，包括来自小开放阅读框的非经典肽段，以理解免疫识别并为肿瘤免疫治疗提供依据。"
+      },
+      "image": "images/research/immunopeptides.jpg",
+      "imageAlt": {
+        "en": "Illustration of molecules on and around the cell surface",
+        "zh": "细胞表面及周围分子的示意插画"
+      },
+      "intro": {
+        "en": "Cells display short peptides on their surface through human leukocyte antigen (major histocompatibility complex) molecules, and T cells use them to tell healthy cells from infected or cancerous ones. A growing share of these immunopeptides comes from non-canonical sources, including small open reading frames.",
+        "zh": "细胞通过人类白细胞抗原分子把短肽呈递到细胞表面，T 细胞据此区分健康细胞与被感染或癌变的细胞。这些免疫肽中，有越来越多来自非经典来源，包括小开放阅读框。"
+      },
+      "sections": [
+        {
+          "heading": { "en": "Approaches", "zh": "研究手段" },
+          "items": [
+            {
+              "en": "**Immunopeptidomics by mass spectrometry**: isolating peptides bound to human leukocyte antigen molecules and identifying them at scale.",
+              "zh": "**基于质谱的免疫肽组学**：分离与人类白细胞抗原分子结合的肽段，并进行大规模鉴定。"
+            },
+            {
+              "en": "**Integrated search strategies** that combine proteogenomic databases with mass spectrometry to find non-canonical class I and class II peptides.",
+              "zh": "**整合检索策略**：结合蛋白基因组学数据库与质谱，发现非经典的 I 类与 II 类肽段。"
+            },
+            {
+              "en": "**Translational studies** that evaluate newly found peptides as candidate targets for tumor immunotherapy.",
+              "zh": "**转化研究**：评估新发现的肽段作为肿瘤免疫治疗候选靶点的潜力。"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "en": "",
+          "zh": "人类白细胞抗原（human leukocyte antigen）：人类的主要组织相容性复合体（major histocompatibility complex），负责把细胞内的肽段呈递给 T 细胞识别。"
+        }
+      ]
+    }
+  ]
+}

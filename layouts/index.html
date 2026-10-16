@@ -1,14 +1,17 @@
 {{ define "main" }}
-<section class="hero">
+{{ $s := site.Data.site }}
+{{ $a := $s.affiliation }}
+{{ $r := site.Data.research }}
+<section class="hero"{{ with $s.heroImage }} style="--hero-image: url('{{ . | relURL }}')"{{ end }}>
   <div class="container hero-inner">
     <div class="hero-text">
-      <p class="eyebrow">{{ site.Params.department }} · {{ site.Params.faculty }} · {{ site.Params.university }}</p>
-      <h1 class="hero-title">{{ site.Title }}</h1>
-      <p class="hero-tagline">{{ site.Params.tagline }}</p>
+      <p class="eyebrow">{{ partial "l.html" $a.department }} · {{ partial "l.html" $a.faculty }} · {{ partial "l.html" $a.university }}</p>
+      <h1 class="hero-title">{{ partial "l.html" $s.labName }}</h1>
+      <p class="hero-tagline">{{ partial "l.html" $s.tagline }}</p>
       <div class="rule" aria-hidden="true"></div>
       <div class="summary">
         <h2 class="label">{{ i18n "researchSummary" }}</h2>
-        <div class="summary-text">{{ .Content }}</div>
+        <div class="summary-text">{{ partial "l.html" $s.summary | markdownify }}</div>
       </div>
     </div>
   </div>
@@ -20,26 +23,17 @@
 
 <section id="highlights" class="container section">
   <p class="eyebrow">{{ i18n "highlights" }}</p>
-  <h2 class="section-title">{{ i18n "highlightsTitle" }}</h2>
-  {{ range $i, $p := (where site.RegularPages "Section" "research").ByWeight }}
-  <article class="highlight{{ if modBool $i 2 }}{{ else }} reverse{{ end }}">
-    <div class="highlight-media">{{ partial "figure.html" $p }}</div>
-    <div class="highlight-text">
-      <p class="index">{{ printf "%02d" (add $i 1) }}</p>
-      <h3>{{ $p.Title }}</h3>
-      <p>{{ $p.Summary | plainify }}</p>
-      <a class="more" href="{{ $p.RelPermalink }}">{{ i18n "explore" }}: {{ $p.Title }} →</a>
-    </div>
-  </article>
+  <h2 class="section-title">{{ partial "l.html" $r.highlightsTitle }}</h2>
+  {{ range $i, $d := $r.directions }}
+    {{ partial "feature.html" (dict "d" $d "i" $i "heading" "h3") }}
   {{ end }}
 </section>
 
 <section class="container section news-preview">
   <p class="eyebrow">{{ i18n "latestNews" }}</p>
-  {{ $lang := site.Language.Lang }}
   <ul class="news-list">
-    {{ range first 3 (sort site.Data.news "date" "desc") }}
-      {{ partial "news-item.html" (dict "item" . "lang" $lang) }}
+    {{ range first ($s.homeNewsCount | default 3) (sort site.Data.news "date" "desc") }}
+      {{ partial "news-item.html" . }}
     {{ end }}
   </ul>
   {{ with site.GetPage "/news" }}<a class="more" href="{{ .RelPermalink }}">{{ i18n "allNews" }} →</a>{{ end }}

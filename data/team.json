@@ -1,0 +1,111 @@
+{
+  "pi": {
+    "name": "Dr. Zhao Qian",
+    "name_zh": "赵倩 博士",
+    "photo": "",
+    "title": {
+      "en": "Associate Professor, Department of Life Sciences, The Hong Kong Polytechnic University",
+      "zh": "香港理工大学生命科学系 副教授"
+    },
+    "bio": {
+      "en": "Dr. Zhao received her PhD from The University of Hong Kong and her Bachelor of Science from Xi'an Jiaotong University, and completed postdoctoral training at the University of California, San Francisco. She is a member of the American Society for Mass Spectrometry, an editorial board member of *Molecular & Cellular Proteomics* and *Chinese Chemical Letters*, and a Council member (Eastern Region) of the Human Proteome Organization. In 2024 she was named a Rising Star in Proteomics and Metabolomics by the *Journal of Proteome Research*.",
+      "zh": "赵倩博士本科毕业于西安交通大学，博士毕业于香港大学，并在美国加州大学旧金山分校完成博士后训练。 她是美国质谱学会会员，*Molecular & Cellular Proteomics* 与 *Chinese Chemical Letters* 编委， 以及国际人类蛋白质组组织理事会（东部区域）理事。2024 年获 *Journal of Proteome Research* 评选为蛋白质组学与代谢组学领域新星（Rising Star）。"
+    }
+  },
+  "members": [
+    {
+      "name": "Dr. Yang Yang",
+      "role": "postdoc"
+    },
+    {
+      "name": "Dr. Li Shuqi",
+      "role": "postdoc"
+    },
+    {
+      "name": "Dr. Zhang Yuanliang",
+      "role": "postdoc"
+    },
+    {
+      "name": "Dr. Zhang Yue",
+      "role": "postdoc"
+    },
+    {
+      "name": "Dr. Wu Shanshan",
+      "role": "visiting"
+    },
+    {
+      "name": "Li Kecheng",
+      "role": "phd"
+    },
+    {
+      "name": "Qi Ao",
+      "role": "phd"
+    },
+    {
+      "name": "Yang Chenxi",
+      "role": "phd"
+    },
+    {
+      "name": "Ren Zhe",
+      "role": "phd"
+    },
+    {
+      "name": "Zhu Tianyang",
+      "role": "phd"
+    },
+    {
+      "name": "Zhan Hongyu",
+      "role": "phd"
+    },
+    {
+      "name": "Liu Qi",
+      "role": "phd"
+    },
+    {
+      "name": "Ayisha",
+      "role": "uris"
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Dr. Ying Yang",
+      "role": "phd",
+      "now": {
+        "en": "Assistant Professor, Chongqing Medical University",
+        "zh": "重庆医科大学 助理教授"
+      }
+    },
+    {
+      "name": "Ms. Chloe Tse",
+      "role": "mphil",
+      "now": {
+        "en": "Hospital Authority, Hong Kong",
+        "zh": "香港医院管理局"
+      }
+    },
+    {
+      "name": "Ms. Annie Wan",
+      "role": "fyp",
+      "now": {
+        "en": "PhD student, The University of Hong Kong",
+        "zh": "香港大学 博士研究生"
+      }
+    },
+    {
+      "name": "Mr. Blue Wang",
+      "role": "fyp",
+      "now": {
+        "en": "PhD student, University of Florida",
+        "zh": "美国佛罗里达大学 博士研究生"
+      }
+    },
+    {
+      "name": "Ms. Winnky Wong",
+      "role": "fyp",
+      "now": {
+        "en": "PhD student, The Hong Kong Polytechnic University",
+        "zh": "香港理工大学 博士研究生"
+      }
+    }
+  ]
+}

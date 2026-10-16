@@ -1,15 +1,17 @@
+{{ $s := site.Data.site }}
+{{ $a := $s.affiliation }}
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-col">
-      <span class="footer-brand">{{ site.Title }}</span>
-      <a href="{{ site.Params.departmentURL }}">{{ site.Params.department }}, {{ site.Params.faculty }}</a>
-      <span>{{ site.Params.university }}</span>
+      <span class="footer-brand">{{ partial "l.html" $s.labName }}</span>
+      <a href="{{ $a.departmentUrl }}">{{ partial "l.html" $a.department }}, {{ partial "l.html" $a.faculty }}</a>
+      <span>{{ partial "l.html" $a.university }}</span>
     </div>
     <div class="footer-col">
-      <span><strong>{{ i18n "office" }}</strong> · {{ site.Params.office }}</span>
-      <span><strong>{{ i18n "lab" }}</strong> · {{ site.Params.lab }}</span>
-      <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
-      <span>© {{ now.Year }} {{ site.Title }}</span>
+      <span><strong>{{ i18n "office" }}</strong> · {{ partial "l.html" $s.contact.office }}</span>
+      <span><strong>{{ i18n "lab" }}</strong> · {{ partial "l.html" $s.contact.lab }}</span>
+      <a href="mailto:{{ $s.contact.email }}">{{ $s.contact.email }}</a>
+      <span>© {{ now.Year }} {{ partial "l.html" $s.labName }}</span>
     </div>
   </div>
 </footer>

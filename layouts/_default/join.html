@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ $j := site.Data.join }}
+<article class="container section">
+  <header class="page-head">
+    <h1 class="page-title">{{ .Title }}</h1>
+  </header>
+  <div class="prose">
+    <p>{{ partial "l.html" $j.intro | markdownify }}</p>
+
+    {{ with $j.howToApply }}
+      <h2>{{ partial "l.html" .heading }}</h2>
+      <p>{{ partial "l.html" .text | markdownify }}</p>
+    {{ end }}
+
+    {{ range $j.positions }}
+      <h2>{{ partial "l.html" .title }}</h2>
+      {{ range .groups }}
+        <p><strong>{{ partial "l.html" .heading }}</strong></p>
+        <ul>
+          {{ range .items }}<li>{{ partial "l.html" . | markdownify }}</li>{{ end }}
+        </ul>
+      {{ end }}
+    {{ end }}
+
+    {{ with $j.funding }}
+      <h2>{{ partial "l.html" .heading }}</h2>
+      <p>{{ partial "l.html" .text | markdownify }}</p>
+    {{ end }}
+  </div>
+  {{ partial "notes.html" $j.notes }}
+</article>
+{{ end }}

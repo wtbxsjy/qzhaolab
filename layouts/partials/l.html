@@ -1,0 +1,8 @@
+{{/* Returns the current language's text from a bilingual field {"en": "...", "zh": "..."}.
+     Falls back to English when the current language is empty; plain strings pass through.
+     Usage: {{ partial "l.html" site.Data.site.tagline }} */}}
+{{ $out := . }}
+{{ if reflect.IsMap . }}
+  {{ $out = index . site.Language.Lang | default (index . "en") | default "" }}
+{{ end }}
+{{ return $out }}

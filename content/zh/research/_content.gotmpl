@@ -1,0 +1,4 @@
+{{/* Builds one page per research direction from data/research.json. Edit that file, not this one. */}}
+{{ range $i, $d := .Site.Data.research.directions }}
+  {{ $.AddPage (dict "path" $d.id "kind" "page" "title" (index $d.title $.Site.Language.Lang | default $d.title.en) "params" (dict "direction" $d.id "order" $i)) }}
+{{ end }}

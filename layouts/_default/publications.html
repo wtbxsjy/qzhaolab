@@ -2,7 +2,6 @@
 <article class="container section">
   <header class="page-head">
     <h1 class="page-title">{{ .Title }}</h1>
-    <div class="prose">{{ .Content }}</div>
     <p class="note">{{ i18n "correspondingNote" }}</p>
   </header>
   {{ $pubs := sort site.Data.publications "year" "desc" }}

@@ -1,4 +1,4 @@
-"""Complete and extend data/publications.yaml using Crossref metadata.
+"""Complete and extend data/publications.json using Crossref metadata.
 
 What it does
 - For every entry with a DOI whose author list ends in "et al." (or is empty), fetch the full
@@ -10,7 +10,7 @@ Usage
     python scripts/update_publications.py
     python scripts/update_publications.py --add 10.1021/jasms.1c00076 --topics peptidein,immunopeptides --corresponding "Zhao Q"
 
-Needs: Python 3.9+, PyYAML, internet access to api.crossref.org.
+Needs: Python 3.9+ and internet access to api.crossref.org (no extra packages).
 """
 import argparse
 import json
@@ -21,9 +21,8 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-import yaml
 
-DATA = Path(__file__).resolve().parent.parent / "data" / "publications.yaml"
+DATA = Path(__file__).resolve().parent.parent / "data" / "publications.json"
 UA = "QZhaoLabWebsite/1.0 (https://github.com/wtbxsjy/qzhaolab)"
 
 
@@ -89,7 +88,7 @@ def main():
     ap.add_argument("--corresponding", default="", help="comma-separated corresponding authors for the new paper")
     args = ap.parse_args()
 
-    pubs = yaml.safe_load(DATA.read_text(encoding="utf-8")) or []
+    pubs = json.loads(DATA.read_text(encoding="utf-8")) or []
     changed = 0
 
     for p in pubs:
@@ -129,10 +128,7 @@ def main():
 
     pubs.sort(key=lambda p: int(p.get("year") or 0), reverse=True)
     if changed:
-        DATA.write_text(
-            yaml.safe_dump(pubs, allow_unicode=True, sort_keys=False, width=1000),
-            encoding="utf-8",
-        )
+        DATA.write_text(json.dumps(pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{changed} entr{'y' if changed == 1 else 'ies'} changed")
 
 

@@ -1,15 +1,31 @@
 {{ define "main" }}
+{{ $id := .Params.direction }}
+{{ $d := index (where site.Data.research.directions "id" $id) 0 }}
 <article class="container section">
   <header class="page-head">
     <p class="eyebrow"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
     <h1 class="page-title">{{ .Title }}</h1>
   </header>
   <div class="research-layout">
-    <div class="prose">{{ .Content }}</div>
-    <div class="research-figure">{{ partial "figure.html" . }}</div>
+    <div class="prose">
+      <p>{{ partial "l.html" $d.intro | markdownify }}</p>
+      {{ range $d.sections }}
+        <h2>{{ partial "l.html" .heading }}</h2>
+        <ul>
+          {{ range .items }}<li>{{ partial "l.html" . | markdownify }}</li>{{ end }}
+        </ul>
+      {{ end }}
+    </div>
+    <div class="research-figure">
+      {{ with $d.image }}
+        <img class="figure" src="{{ . | relURL }}" alt="{{ partial "l.html" $d.imageAlt }}" loading="lazy">
+      {{ else }}
+        <div class="figure figure-placeholder" role="img" aria-label="{{ i18n "imagePlaceholder" }}">{{ i18n "imagePlaceholder" }}</div>
+      {{ end }}
+    </div>
   </div>
-  {{ $topic := .Params.topic }}
-  {{ $pubs := where site.Data.publications "topics" "intersect" (slice $topic) }}
+
+  {{ $pubs := where site.Data.publications "topics" "intersect" (slice $id) }}
   {{ with $pubs }}
   <section class="section-tight">
     <h2 class="section-title small">{{ i18n "selectedPublications" }}</h2>
@@ -20,5 +36,7 @@
     {{ with site.GetPage "/publications" }}<a class="more" href="{{ .RelPermalink }}">{{ i18n "allPublications" }} →</a>{{ end }}
   </section>
   {{ end }}
+
+  {{ partial "notes.html" $d.notes }}
 </article>
 {{ end }}

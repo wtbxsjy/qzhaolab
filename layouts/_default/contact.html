@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $c := site.Data.site.contact }}
+<article class="container section">
+  <header class="page-head">
+    <h1 class="page-title">{{ .Title }}</h1>
+  </header>
+  <dl class="contact">
+    <dt>{{ i18n "office" }}</dt>
+    <dd>{{ partial "l.html" $c.office }}</dd>
+    <dt>{{ i18n "lab" }}</dt>
+    <dd>{{ partial "l.html" $c.lab }}</dd>
+    <dt>{{ i18n "email" }}</dt>
+    <dd><a href="mailto:{{ $c.email }}">{{ $c.email }}</a></dd>
+  </dl>
+  {{ with $c.mapUrl }}<a class="more" href="{{ . }}">{{ i18n "viewMap" }} →</a>{{ end }}
+</article>
+{{ end }}

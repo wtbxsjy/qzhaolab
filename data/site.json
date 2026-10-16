@@ -1,0 +1,40 @@
+{
+  "labName": {
+    "en": "The QZhao Lab",
+    "zh": "赵倩课题组"
+  },
+  "tagline": {
+    "en": "Human Natural Peptide Discovery on a Global Scale",
+    "zh": "在全球尺度上发现人类天然肽"
+  },
+  "description": {
+    "en": "The QZhao Lab at the Department of Life Sciences, The Hong Kong Polytechnic University, discovers and characterizes natural peptides in human cells.",
+    "zh": "香港理工大学生命科学系赵倩课题组，致力于发现与解析人类细胞中的天然肽。"
+  },
+  "affiliation": {
+    "department": { "en": "Department of Life Sciences", "zh": "生命科学系" },
+    "faculty": { "en": "Faculty of Science", "zh": "理学院" },
+    "university": { "en": "The Hong Kong Polytechnic University", "zh": "香港理工大学" },
+    "departmentUrl": "https://www.polyu.edu.hk/ls/"
+  },
+  "heroImage": "images/hero-bg.jpg",
+  "summary": {
+    "en": "Our research lies at the interface of chemical biology and proteomics. Combining synthetic chemistry, biology and mass spectrometry, we discover and characterize natural peptides in human cells, from functional peptides encoded by small open reading frames to immunopeptides presented on the cell surface, and investigate how they shape biology and disease.",
+    "zh": "课题组的研究位于化学生物学与蛋白质组学的交叉领域。我们结合合成化学、生物学与质谱技术，发现并解析人类细胞中的天然肽，包括由小开放阅读框（基因组中较短、可被翻译成蛋白质的序列）编码的功能性肽，以及呈递在细胞表面的免疫肽，并探索它们在生理与疾病中的作用。"
+  },
+  "homeNewsCount": 3,
+  "contact": {
+    "email": "q.zhao@polyu.edu.hk",
+    "office": {
+      "en": "Room Y846, 8/F, Block Y, Lee Shau Kee Building, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong",
+      "zh": "香港九龙红磡 香港理工大学 李兆基楼 Y 座 8 楼 Y846 室"
+    },
+    "lab": {
+      "en": "Room Y1202, 12/F, Block Y, Lee Shau Kee Building, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong",
+      "zh": "香港九龙红磡 香港理工大学 李兆基楼 Y 座 12 楼 Y1202 室"
+    },
+    "mapUrl": "https://www.openstreetmap.org/?mlat=22.3061&mlon=114.1807#map=17/22.3061/114.1807",
+    "staffPage": "https://www.polyu.edu.hk/en/abct/people/academic-staff/prof-zhao-qian"
+  },
+  "highlightAuthors": ["Zhao Q"]
+}

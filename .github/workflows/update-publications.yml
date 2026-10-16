@@ -1,4 +1,4 @@
-# Fills in full author lists and titles in data/publications.yaml from Crossref (by DOI),
+# Fills in full author lists and titles in data/publications.json from Crossref (by DOI),
 # and can add a new paper by DOI. Run it from the Actions tab: "Update publications" → "Run workflow".
 name: Update publications
 
@@ -30,8 +30,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pyyaml
-      - name: Update data/publications.yaml
+      - name: Update data/publications.json
         env:
           NEW_DOI: ${{ inputs.doi }}
           NEW_TOPICS: ${{ inputs.topics }}

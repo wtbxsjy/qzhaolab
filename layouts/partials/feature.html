@@ -1,0 +1,20 @@
+{{/* A research direction shown as an image with a text card floating over its edge.
+     Context: dict "d" (direction from data/research.json) "i" (its index) "heading" ("h2" or "h3"). */}}
+{{ $d := .d }}
+{{ $page := site.GetPage (printf "/research/%s" $d.id) }}
+{{ $title := partial "l.html" $d.title }}
+<article class="feature{{ if modBool .i 2 }}{{ else }} reverse{{ end }}">
+  <div class="feature-media">
+    {{ with $d.image }}
+      <img class="feature-img" src="{{ . | relURL }}" alt="{{ partial "l.html" $d.imageAlt }}" loading="lazy">
+    {{ else }}
+      <div class="feature-img figure-placeholder" role="img" aria-label="{{ i18n "imagePlaceholder" }}">{{ i18n "imagePlaceholder" }}</div>
+    {{ end }}
+  </div>
+  <div class="feature-card">
+    <p class="index">{{ printf "%02d" (add .i 1) }}</p>
+    {{ if eq .heading "h2" }}<h2>{{ $title }}</h2>{{ else }}<h3>{{ $title }}</h3>{{ end }}
+    <p>{{ partial "l.html" $d.summary | markdownify }}</p>
+    {{ with $page }}<a class="more" href="{{ .RelPermalink }}">{{ i18n "explore" }}: {{ $title }} →</a>{{ end }}
+  </div>
+</article>

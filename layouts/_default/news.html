@@ -1,13 +1,11 @@
 {{ define "main" }}
-{{ $lang := site.Language.Lang }}
 <article class="container section">
   <header class="page-head">
     <h1 class="page-title">{{ .Title }}</h1>
-    <div class="prose">{{ .Content }}</div>
   </header>
   <ul class="news-list">
     {{ range sort site.Data.news "date" "desc" }}
-      {{ partial "news-item.html" (dict "item" . "lang" $lang) }}
+      {{ partial "news-item.html" . }}
     {{ end }}
   </ul>
 </article>

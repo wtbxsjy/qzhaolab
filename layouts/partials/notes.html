@@ -1,0 +1,11 @@
+{{/* Term explanations. Context: a list of bilingual notes; only notes with text in the current language are shown. */}}
+{{ $notes := slice }}
+{{ range . }}{{ with index . site.Language.Lang }}{{ $notes = $notes | append . }}{{ end }}{{ end }}
+{{ with $notes }}
+<aside class="notes" aria-label="{{ i18n "notes" }}">
+  <h2 class="notes-title">{{ i18n "notes" }}</h2>
+  <ol>
+    {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+  </ol>
+</aside>
+{{ end }}

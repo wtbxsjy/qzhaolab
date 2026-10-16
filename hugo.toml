@@ -1,16 +1,12 @@
 baseURL = "https://wtbxsjy.github.io/qzhaolab/"
+# 网站内容（课题组名称、简介、地址、成员、论文、新闻等）都在 data/*.json 中维护。
+# 这里只保存网站结构：语言与导航栏。
 title = "The QZhao Lab"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
 
-[params]
-  # 论文列表中需要加粗的作者名（与 data/publications.yaml 中的写法一致）
-  highlightAuthors = ["Zhao Q"]
-  email = "q.zhao@polyu.edu.hk"
-  staffPage = "https://www.polyu.edu.hk/en/abct/people/academic-staff/prof-zhao-qian"
-  departmentURL = "https://www.polyu.edu.hk/ls/"
 
 [languages]
   [languages.en]
@@ -19,14 +15,6 @@ disableKinds = ["taxonomy", "term", "RSS"]
     contentDir = "content/en"
     weight = 1
     title = "The QZhao Lab"
-    [languages.en.params]
-      tagline = "Human Natural Peptide Discovery on a Global Scale"
-      description = "The QZhao Lab at the Department of Life Sciences, The Hong Kong Polytechnic University, discovers and characterizes natural peptides in human cells."
-      department = "Department of Life Sciences"
-      faculty = "Faculty of Science"
-      university = "The Hong Kong Polytechnic University"
-      office = "Room Y846, 8/F, Block Y, Lee Shau Kee Building, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong"
-      lab = "Room Y1202, 12/F, Block Y, Lee Shau Kee Building, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong"
     [[languages.en.menus.main]]
       name = "Research"
       pageRef = "/research"
@@ -58,14 +46,6 @@ disableKinds = ["taxonomy", "term", "RSS"]
     contentDir = "content/zh"
     weight = 2
     title = "赵倩课题组"
-    [languages.zh.params]
-      tagline = "在全球尺度上发现人类天然肽"
-      description = "香港理工大学生命科学系赵倩课题组，致力于发现与解析人类细胞中的天然肽。"
-      department = "生命科学系"
-      faculty = "理学院"
-      university = "香港理工大学"
-      office = "香港九龙红磡 香港理工大学 李兆基楼 Y 座 8 楼 Y846 室"
-      lab = "香港九龙红磡 香港理工大学 李兆基楼 Y 座 12 楼 Y1202 室"
     [[languages.zh.menus.main]]
       name = "研究方向"
       pageRef = "/research"

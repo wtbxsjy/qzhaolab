@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    <a class="brand" href="{{ site.Home.RelPermalink }}">{{ partial "l.html" site.Data.site.labName }}</a>
     <nav class="main-nav" aria-label="Main">
       {{ $current := . }}
       {{ range site.Menus.main }}

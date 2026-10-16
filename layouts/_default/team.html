@@ -1,21 +1,23 @@
 {{ define "main" }}
-{{ $lang := site.Language.Lang }}
 {{ $team := site.Data.team }}
+{{ $zh := eq site.Language.Lang "zh" }}
+{{ $s := site.Data.site }}
 <article class="container section">
   <header class="page-head">
     <h1 class="page-title">{{ .Title }}</h1>
   </header>
 
   {{ with $team.pi }}
+  {{ $name := cond (and $zh .name_zh) .name_zh .name }}
   <section class="section-tight">
     <h2 class="section-title small">{{ i18n "principalInvestigator" }}</h2>
     <div class="pi">
-      {{ with .photo }}<img class="pi-photo" src="{{ . | relURL }}" alt="{{ $team.pi.name }}">{{ else }}<div class="pi-photo avatar" aria-hidden="true">{{ substr $team.pi.name 0 1 }}</div>{{ end }}
+      {{ with .photo }}<img class="pi-photo" src="{{ . | relURL }}" alt="{{ $name }}">{{ else }}<div class="pi-photo avatar" aria-hidden="true">{{ replaceRE `^(Dr\.|Mr\.|Ms\.|Prof\.)\s*` "" .name | truncate 1 "" }}</div>{{ end }}
       <div class="pi-text">
-        <h3>{{ if eq $lang "zh" }}{{ .name_zh | default .name }}{{ else }}{{ .name }}{{ end }}</h3>
-        <p class="role">{{ index .title $lang }}</p>
-        <div class="prose">{{ index .bio $lang | markdownify }}</div>
-        <p><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a> · <a href="{{ site.Params.staffPage }}">{{ i18n "staffPage" }}</a></p>
+        <h3>{{ $name }}</h3>
+        <p class="role">{{ partial "l.html" .title }}</p>
+        <div class="prose">{{ partial "l.html" .bio | markdownify }}</div>
+        <p><a href="mailto:{{ $s.contact.email }}">{{ $s.contact.email }}</a>{{ with $s.contact.staffPage }} · <a href="{{ . }}">{{ i18n "staffPage" }}</a>{{ end }}</p>
       </div>
     </div>
   </section>
@@ -25,9 +27,11 @@
     <h2 class="section-title small">{{ i18n "currentMembers" }}</h2>
     <ul class="people">
       {{ range $team.members }}
+      {{ $name := cond (and $zh .name_zh) .name_zh .name }}
+      {{ $initial := replaceRE `^(Dr\.|Mr\.|Ms\.|Prof\.)\s*` "" .name | truncate 1 "" }}
       <li class="person">
-        {{ with .photo }}<img class="avatar" src="{{ . | relURL }}" alt="">{{ else }}<span class="avatar" aria-hidden="true">{{ substr .name 0 1 }}</span>{{ end }}
-        <span class="person-name">{{ if eq $lang "zh" }}{{ .name_zh | default .name }}{{ else }}{{ .name }}{{ end }}</span>
+        {{ with .photo }}<img class="avatar" src="{{ . | relURL }}" alt="">{{ else }}<span class="avatar" aria-hidden="true">{{ $initial }}</span>{{ end }}
+        <span class="person-name">{{ $name }}</span>
         <span class="person-role">{{ i18n .role }}</span>
       </li>
       {{ end }}
@@ -40,9 +44,9 @@
     <ul class="alumni">
       {{ range . }}
       <li>
-        <span class="person-name">{{ if eq $lang "zh" }}{{ .name_zh | default .name }}{{ else }}{{ .name }}{{ end }}</span>
+        <span class="person-name">{{ cond (and $zh .name_zh) .name_zh .name }}</span>
         <span class="person-role">{{ i18n .role }}</span>
-        {{ with index .now $lang }}<span class="alumni-now">{{ i18n "nowAt" }}: {{ . }}</span>{{ end }}
+        {{ with partial "l.html" .now }}<span class="alumni-now">{{ i18n "nowAt" }}: {{ . }}</span>{{ end }}
       </li>
       {{ end }}
     </ul>

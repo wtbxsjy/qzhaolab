@@ -1,11 +1,15 @@
+{{ $s := site.Data.site }}
+{{ $lab := partial "l.html" $s.labName }}
+{{ $desc := partial "l.html" $s.description }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ if .IsHome }}{{ site.Title }} · {{ site.Params.tagline }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
-<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<title>{{ if .IsHome }}{{ $lab }} · {{ partial "l.html" $s.tagline }}{{ else }}{{ .Title }} · {{ $lab }}{{ end }}</title>
+<meta name="description" content="{{ $desc }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ $lab }}{{ else }}{{ .Title }} · {{ $lab }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ .Permalink }}">
+{{ with $s.heroImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
 {{ end }}

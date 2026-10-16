@@ -1,6 +1,6 @@
-{{/* One publication entry. Context: a map from data/publications.yaml. */}}
+{{/* One publication entry. Context: a map from data/publications.json. */}}
 {{ $p := . }}
-{{ $highlight := site.Params.highlightAuthors }}
+{{ $highlight := site.Data.site.highlightAuthors | default slice }}
 {{ $corr := $p.corresponding | default slice }}
 {{ $equal := $p.equal | default slice }}
 <li class="pub">

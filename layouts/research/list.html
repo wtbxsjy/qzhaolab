@@ -1,19 +1,12 @@
 {{ define "main" }}
+{{ $r := site.Data.research }}
 <section class="container section page-head">
   <h1 class="page-title">{{ .Title }}</h1>
-  <div class="prose">{{ .Content }}</div>
+  <div class="prose">{{ partial "l.html" $r.intro | markdownify }}</div>
 </section>
-<section class="container section">
-  {{ range $i, $p := .Pages.ByWeight }}
-  <article class="highlight{{ if modBool $i 2 }}{{ else }} reverse{{ end }}">
-    <div class="highlight-media">{{ partial "figure.html" $p }}</div>
-    <div class="highlight-text">
-      <p class="index">{{ printf "%02d" (add $i 1) }}</p>
-      <h2>{{ $p.Title }}</h2>
-      <p>{{ $p.Summary | plainify }}</p>
-      <a class="more" href="{{ $p.RelPermalink }}">{{ i18n "explore" }}: {{ $p.Title }} →</a>
-    </div>
-  </article>
+<section class="container section-flush">
+  {{ range $i, $d := $r.directions }}
+    {{ partial "feature.html" (dict "d" $d "i" $i "heading" "h2") }}
   {{ end }}
 </section>
 {{ end }}
