@@ -1,0 +1,47 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">{{ site.Params.department }} · {{ site.Params.faculty }} · {{ site.Params.university }}</p>
+      <h1 class="hero-title">{{ site.Title }}</h1>
+      <p class="hero-tagline">{{ site.Params.tagline }}</p>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="summary">
+        <h2 class="label">{{ i18n "researchSummary" }}</h2>
+        <div class="summary-text">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#highlights">
+    <span>{{ i18n "scroll" }}</span>
+    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg>
+  </a>
+</section>
+
+<section id="highlights" class="container section">
+  <p class="eyebrow">{{ i18n "highlights" }}</p>
+  <h2 class="section-title">{{ i18n "highlightsTitle" }}</h2>
+  {{ range $i, $p := (where site.RegularPages "Section" "research").ByWeight }}
+  <article class="highlight{{ if modBool $i 2 }}{{ else }} reverse{{ end }}">
+    <div class="highlight-media">{{ partial "figure.html" $p }}</div>
+    <div class="highlight-text">
+      <p class="index">{{ printf "%02d" (add $i 1) }}</p>
+      <h3>{{ $p.Title }}</h3>
+      <p>{{ $p.Summary | plainify }}</p>
+      <a class="more" href="{{ $p.RelPermalink }}">{{ i18n "explore" }}: {{ $p.Title }} →</a>
+    </div>
+  </article>
+  {{ end }}
+</section>
+
+<section class="container section news-preview">
+  <p class="eyebrow">{{ i18n "latestNews" }}</p>
+  {{ $lang := site.Language.Lang }}
+  <ul class="news-list">
+    {{ range first 3 (sort site.Data.news "date" "desc") }}
+      {{ partial "news-item.html" (dict "item" . "lang" $lang) }}
+    {{ end }}
+  </ul>
+  {{ with site.GetPage "/news" }}<a class="more" href="{{ .RelPermalink }}">{{ i18n "allNews" }} →</a>{{ end }}
+</section>
+{{ end }}

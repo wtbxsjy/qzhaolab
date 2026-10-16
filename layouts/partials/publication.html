@@ -1,0 +1,20 @@
+{{/* One publication entry. Context: a map from data/publications.yaml. */}}
+{{ $p := . }}
+{{ $highlight := site.Params.highlightAuthors }}
+{{ $corr := $p.corresponding | default slice }}
+{{ $equal := $p.equal | default slice }}
+<li class="pub">
+  <p class="pub-title">
+    {{ with $p.doi }}<a href="https://doi.org/{{ . }}">{{ $p.title }}</a>{{ else }}{{ with $p.url }}<a href="{{ . }}">{{ $p.title }}</a>{{ else }}{{ $p.title }}{{ end }}{{ end }}
+  </p>
+  <p class="pub-authors">
+    {{- range $i, $a := $p.authors -}}
+      {{- if $i }}, {{ end -}}
+      {{- $mark := "" -}}
+      {{- if in $equal $a }}{{ $mark = print $mark "#" }}{{ end -}}
+      {{- if in $corr $a }}{{ $mark = print $mark "*" }}{{ end -}}
+      {{- if in $highlight $a }}<strong>{{ $a }}{{ $mark }}</strong>{{ else }}{{ $a }}{{ $mark }}{{ end -}}
+    {{- end -}}
+  </p>
+  <p class="pub-venue"><em>{{ $p.journal }}</em>, {{ $p.year }}{{ with $p.volume }}, {{ . }}{{ end }}{{ with $p.pages }}, {{ . }}{{ end }}</p>
+</li>

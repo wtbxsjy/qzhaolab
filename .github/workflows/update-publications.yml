@@ -1,0 +1,50 @@
+# Fills in full author lists and titles in data/publications.yaml from Crossref (by DOI),
+# and can add a new paper by DOI. Run it from the Actions tab: "Update publications" → "Run workflow".
+name: Update publications
+
+on:
+  workflow_dispatch:
+    inputs:
+      doi:
+        description: "Optional: DOI of a new paper to add, e.g. 10.1021/acs.analchem.4c02924"
+        required: false
+        default: ""
+      topics:
+        description: "Optional: research topics for the new paper, comma-separated (peptidein, immunopeptides)"
+        required: false
+        default: ""
+      corresponding:
+        description: "Optional: corresponding authors of the new paper, comma-separated, e.g. Zhao Q"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Update data/publications.yaml
+        env:
+          NEW_DOI: ${{ inputs.doi }}
+          NEW_TOPICS: ${{ inputs.topics }}
+          NEW_CORRESPONDING: ${{ inputs.corresponding }}
+        run: python scripts/update_publications.py --add "$NEW_DOI" --topics "$NEW_TOPICS" --corresponding "$NEW_CORRESPONDING"
+      - name: Commit and redeploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then echo "No changes."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Update publications from Crossref"
+          git push
+          # A push made with this token does not start other workflows, so start the deploy explicitly.
+          gh workflow run deploy.yml --ref main

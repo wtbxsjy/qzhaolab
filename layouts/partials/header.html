@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    <nav class="main-nav" aria-label="Main">
+      {{ $current := . }}
+      {{ range site.Menus.main }}
+        {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+        <a href="{{ .URL }}"{{ if $active }} aria-current="page" class="active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+      {{ range .Translations }}
+        <a class="lang-switch" href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}" lang="{{ .Language.LanguageCode }}">{{ i18n "switchLanguage" }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

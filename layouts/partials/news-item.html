@@ -1,0 +1,6 @@
+{{/* One news entry. Context: dict "item" (map from data/news.yaml) "lang" (language code). */}}
+{{ $text := index .item .lang | default .item.en }}
+<li class="news-item">
+  <time datetime="{{ .item.date }}">{{ (time .item.date) | time.Format ":date_medium" }}</time>
+  <span>{{ $text | markdownify }}</span>
+</li>

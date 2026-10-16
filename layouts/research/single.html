@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="container section">
+  <header class="page-head">
+    <p class="eyebrow"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
+    <h1 class="page-title">{{ .Title }}</h1>
+  </header>
+  <div class="research-layout">
+    <div class="prose">{{ .Content }}</div>
+    <div class="research-figure">{{ partial "figure.html" . }}</div>
+  </div>
+  {{ $topic := .Params.topic }}
+  {{ $pubs := where site.Data.publications "topics" "intersect" (slice $topic) }}
+  {{ with $pubs }}
+  <section class="section-tight">
+    <h2 class="section-title small">{{ i18n "selectedPublications" }}</h2>
+    <ul class="pub-list">
+      {{ range sort . "year" "desc" }}{{ partial "publication.html" . }}{{ end }}
+    </ul>
+    <p class="note">{{ i18n "correspondingNote" }}</p>
+    {{ with site.GetPage "/publications" }}<a class="more" href="{{ .RelPermalink }}">{{ i18n "allPublications" }} →</a>{{ end }}
+  </section>
+  {{ end }}
+</article>
+{{ end }}

@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <span class="footer-brand">{{ site.Title }}</span>
+      <a href="{{ site.Params.departmentURL }}">{{ site.Params.department }}, {{ site.Params.faculty }}</a>
+      <span>{{ site.Params.university }}</span>
+    </div>
+    <div class="footer-col">
+      <span><strong>{{ i18n "office" }}</strong> · {{ site.Params.office }}</span>
+      <span><strong>{{ i18n "lab" }}</strong> · {{ site.Params.lab }}</span>
+      <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+      <span>© {{ now.Year }} {{ site.Title }}</span>
+    </div>
+  </div>
+</footer>

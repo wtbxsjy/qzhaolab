@@ -1,0 +1,95 @@
+baseURL = "https://wtbxsjy.github.io/qzhaolab/"
+title = "The QZhao Lab"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  # 论文列表中需要加粗的作者名（与 data/publications.yaml 中的写法一致）
+  highlightAuthors = ["Zhao Q"]
+  email = "q.zhao@polyu.edu.hk"
+  staffPage = "https://www.polyu.edu.hk/en/abct/people/academic-staff/prof-zhao-qian"
+  departmentURL = "https://www.polyu.edu.hk/ls/"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    contentDir = "content/en"
+    weight = 1
+    title = "The QZhao Lab"
+    [languages.en.params]
+      tagline = "Human Natural Peptide Discovery on a Global Scale"
+      description = "The QZhao Lab at the Department of Life Sciences, The Hong Kong Polytechnic University, discovers and characterizes natural peptides in human cells."
+      department = "Department of Life Sciences"
+      faculty = "Faculty of Science"
+      university = "The Hong Kong Polytechnic University"
+      office = "Room Y846, 8/F, Block Y, Lee Shau Kee Building, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong"
+      lab = "Room Y1202, 12/F, Block Y, Lee Shau Kee Building, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong"
+    [[languages.en.menus.main]]
+      name = "Research"
+      pageRef = "/research"
+      weight = 10
+    [[languages.en.menus.main]]
+      name = "Team"
+      pageRef = "/team"
+      weight = 20
+    [[languages.en.menus.main]]
+      name = "Publications"
+      pageRef = "/publications"
+      weight = 30
+    [[languages.en.menus.main]]
+      name = "News"
+      pageRef = "/news"
+      weight = 40
+    [[languages.en.menus.main]]
+      name = "Join Us"
+      pageRef = "/join"
+      weight = 50
+    [[languages.en.menus.main]]
+      name = "Contact"
+      pageRef = "/contact"
+      weight = 60
+
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh-Hans"
+    contentDir = "content/zh"
+    weight = 2
+    title = "赵倩课题组"
+    [languages.zh.params]
+      tagline = "在全球尺度上发现人类天然肽"
+      description = "香港理工大学生命科学系赵倩课题组，致力于发现与解析人类细胞中的天然肽。"
+      department = "生命科学系"
+      faculty = "理学院"
+      university = "香港理工大学"
+      office = "香港九龙红磡 香港理工大学 李兆基楼 Y 座 8 楼 Y846 室"
+      lab = "香港九龙红磡 香港理工大学 李兆基楼 Y 座 12 楼 Y1202 室"
+    [[languages.zh.menus.main]]
+      name = "研究方向"
+      pageRef = "/research"
+      weight = 10
+    [[languages.zh.menus.main]]
+      name = "团队成员"
+      pageRef = "/team"
+      weight = 20
+    [[languages.zh.menus.main]]
+      name = "论文发表"
+      pageRef = "/publications"
+      weight = 30
+    [[languages.zh.menus.main]]
+      name = "新闻动态"
+      pageRef = "/news"
+      weight = 40
+    [[languages.zh.menus.main]]
+      name = "加入我们"
+      pageRef = "/join"
+      weight = 50
+    [[languages.zh.menus.main]]
+      name = "联系方式"
+      pageRef = "/contact"
+      weight = 60
+
+[markup.goldmark.renderer]
+  unsafe = true

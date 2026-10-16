@@ -1,0 +1,6 @@
+{{/* Shows a page's image, or a labelled placeholder when there is none. Context: the page. */}}
+{{ with .Params.image }}
+  <img class="figure" src="{{ . | relURL }}" alt="{{ $.Params.imageAlt | default $.Title }}" loading="lazy">
+{{ else }}
+  <div class="figure figure-placeholder" role="img" aria-label="{{ i18n "imagePlaceholder" }}">{{ i18n "imagePlaceholder" }}</div>
+{{ end }}
