@@ -3,56 +3,112 @@
     "title": "Cefdinir Reprograms Gram-positive Bacteria to Synergize with Lysozyme against Superbugs",
     "authors": [
       "Zhang Q",
-      "et al."
+      "Yang Y",
+      "Li S",
+      "Liu Z",
+      "Lee C",
+      "Ko C",
+      "Zhao Q"
     ],
     "journal": "mLife",
     "year": 2026,
     "doi": "10.1002/mlf2.70080",
     "corresponding": [
       "Zhao Q"
-    ]
+    ],
+    "volume": "5(3)",
+    "pages": "355–368"
   },
   {
     "title": "Synergistic Effects of Auranofin and Lysozyme Against Staphylococcus Aureus",
     "authors": [
       "Zhang Q",
-      "et al."
+      "Yang Y",
+      "Li S",
+      "Chiou J",
+      "Zhao Q"
     ],
     "journal": "Probiotics and Antimicrobial Proteins",
     "year": 2026,
     "doi": "10.1007/s12602-026-10983-2",
     "corresponding": [
       "Zhao Q"
-    ]
+    ],
+    "volume": "18(6)",
+    "pages": "7668–7680"
   },
   {
     "title": "Identification of Cathepsin L as the molecular target of hydroxychloroquine with chemical proteomics",
     "authors": [
       "Shang J",
-      "et al."
+      "Hu B",
+      "Kung KKY",
+      "Jiang J",
+      "Zhang Q",
+      "Wong MK",
+      "Chu H",
+      "Zhao Q"
     ],
     "journal": "Molecular & Cellular Proteomics",
     "year": 2025,
     "doi": "10.1016/j.mcpro.2025.101314",
     "corresponding": [
       "Zhao Q"
-    ]
+    ],
+    "volume": "24(12)",
+    "pages": "101314"
   },
   {
     "title": "A novel organoid model retaining the glioma microenvironment for personalized drug screening and therapeutic evaluation",
     "authors": [
       "Zheng C",
-      "et al."
+      "Wang P",
+      "Zhang D",
+      "Fang Z",
+      "Feng Y",
+      "Chen J",
+      "Chen J",
+      "Fu Y",
+      "Yang B",
+      "Yu S",
+      "Min L",
+      "Xiao B",
+      "Xing C",
+      "Yang Y",
+      "Wang J",
+      "Zou D",
+      "Ning S",
+      "Liu T",
+      "Yan J",
+      "Zhao Q",
+      "Sun F",
+      "Chen Q",
+      "Zhang Y",
+      "Jiang T",
+      "Zheng L",
+      "Bao Z"
     ],
     "journal": "Bioactive Materials",
     "year": 2025,
-    "doi": "10.1016/j.bioactmat.2025.07.015"
+    "doi": "10.1016/j.bioactmat.2025.07.015",
+    "volume": "53",
+    "pages": "205–217"
   },
   {
     "title": "A Strategy to Re-Sensitise Drug-resistant Gram-Positive Bacteria to Oxazolidinone-Class Antibiotics",
     "authors": [
       "Zhang Q",
-      "et al."
+      "Yang Y",
+      "Yang Y",
+      "Shang J",
+      "Su S",
+      "Gao P",
+      "Li XX",
+      "Liu Z",
+      "Kao RYT",
+      "Ko BCB",
+      "Thompson B",
+      "Zhao Q"
     ],
     "journal": "eBioMedicine",
     "year": 2025,
@@ -60,13 +116,24 @@
     "doi": "10.1016/j.ebiom.2025.105914",
     "corresponding": [
       "Zhao Q"
-    ]
+    ],
+    "pages": "105914"
   },
   {
-    "title": "Bidirectional Phosphorylation Changes in Opsins Associated With Early Myopia and Hyperopia Signal Regulation…",
+    "title": "Bidirectional Phosphorylation Changes in Opsins Associated With Early Myopia and Hyperopia Signal Regulation by Phosphoproteomics",
     "authors": [
       "Yang Y",
-      "et al."
+      "Sze YH",
+      "Zhou H",
+      "Ko WWM",
+      "Zhang Y",
+      "Li K",
+      "Zhang Q",
+      "Li KK",
+      "Charles TC",
+      "To CH",
+      "Zhao Q",
+      "Lam TC"
     ],
     "journal": "Investigative Ophthalmology & Visual Science",
     "year": 2025,
@@ -82,20 +149,37 @@
     "title": "Imaging-Based High-Content Screening with Clickable Probes Identifies XPB Inhibitors",
     "authors": [
       "Li S",
-      "et al."
+      "Zhang H",
+      "Yang Y",
+      "Ko BC",
+      "Shang J",
+      "Guo H",
+      "Yang D",
+      "Wong M",
+      "Chan RW",
+      "Kung KK",
+      "Zhao Q"
     ],
     "journal": "Angewandte Chemie International Edition",
     "year": 2025,
     "doi": "10.1002/anie.202505585",
     "corresponding": [
       "Zhao Q"
-    ]
+    ],
+    "volume": "64(36)"
   },
   {
     "title": "Proteogenomic Profiling Reveals Small ORFs and Functional Microproteins in Activated T Cells",
     "authors": [
       "Yang Y",
-      "et al."
+      "Chen C",
+      "Li K",
+      "Zhang Y",
+      "Chen L",
+      "Shi J",
+      "Mu Q",
+      "Xu Y",
+      "Zhao Q"
     ],
     "journal": "Molecular & Cellular Proteomics",
     "year": 2025,
@@ -105,13 +189,22 @@
     ],
     "topics": [
       "peptidein"
-    ]
+    ],
+    "volume": "24(6)",
+    "pages": "100914"
   },
   {
-    "title": "Enhanced Discovery of Alternative Proteins (AltProts) in Mouse Cardiac Development Using Data-Independent…",
+    "title": "Enhanced Discovery of Alternative Proteins (AltProts) in Mouse Cardiac Development Using Data-Independent Acquisition (DIA) Proteomics",
     "authors": [
       "Zhang Y",
-      "et al."
+      "Yang Y",
+      "Li K",
+      "Chen L",
+      "Yang Y",
+      "Yang C",
+      "Xie Z",
+      "Wang H",
+      "Zhao Q"
     ],
     "journal": "Analytical Chemistry",
     "year": 2025,
@@ -121,99 +214,226 @@
     ],
     "topics": [
       "peptidein"
-    ]
+    ],
+    "volume": "97(3)",
+    "pages": "1517–1527"
   },
   {
     "title": "Multiplexed Target Profiling with Integrated Chemical Genomics and Chemical Proteomics",
     "authors": [
       "Yang Y",
-      "et al."
+      "Tse YS",
+      "Zhang Q",
+      "Wong KY",
+      "Yang C",
+      "Yang Y",
+      "Li S",
+      "Lau KW",
+      "Charles TC",
+      "Lam TC",
+      "Zhao Q"
     ],
     "journal": "Journal of Medicinal Chemistry",
     "year": 2024,
     "doi": "10.1021/acs.jmedchem.4c01463",
     "corresponding": [
       "Zhao Q"
-    ]
+    ],
+    "volume": "67(19)",
+    "pages": "17542–17550"
   },
   {
     "title": "Reactivity-Tunable Fluorescent Platform for Selective and Biocompatible Modification of Cysteine or Lysine",
     "authors": [
       "Ren X",
-      "et al."
+      "Li H",
+      "Peng H",
+      "Yang Y",
+      "Su H",
+      "Huang C",
+      "Wang X",
+      "Zhang J",
+      "Liu Z",
+      "Wei W",
+      "Cheng K",
+      "Zhu T",
+      "Lu Z",
+      "Li Z",
+      "Zhao Q",
+      "Tang BZ",
+      "Yao SQ",
+      "Song X",
+      "Sun H"
     ],
     "journal": "Advanced Science",
     "year": 2024,
-    "doi": "10.1002/advs.202402838"
+    "doi": "10.1002/advs.202402838",
+    "volume": "11(31)"
   },
   {
     "title": "ZSWIM4 regulates embryonic patterning and BMP signaling by promoting nuclear Smad1 degradation",
     "authors": [
-      "Wang CD",
-      "et al."
+      "Wang C",
+      "Liu Z",
+      "Zeng Y",
+      "Zhou L",
+      "Long Q",
+      "Hassan IU",
+      "Zhang Y",
+      "Qi X",
+      "Cai D",
+      "Mao B",
+      "Lu G",
+      "Sun J",
+      "Yao Y",
+      "Deng Y",
+      "Zhao Q",
+      "Feng B",
+      "Zhou Q",
+      "Chan WY",
+      "Zhao H"
     ],
     "journal": "EMBO Reports",
     "year": 2024,
-    "doi": "10.1038/s44319-023-00046-w"
+    "doi": "10.1038/s44319-023-00046-w",
+    "volume": "25(2)",
+    "pages": "646–671"
   },
   {
-    "title": "Noncoding mutations cause super-enhancer retargeting resulting in protein synthesis dysregulation…",
+    "title": "Noncoding mutations cause super-enhancer retargeting resulting in protein synthesis dysregulation during B cell lymphoma progression",
     "authors": [
       "Leeman-Neill RJ",
-      "et al."
+      "Song D",
+      "Bizarro J",
+      "Wacheul L",
+      "Rothschild G",
+      "Singh S",
+      "Yang Y",
+      "Sarode AY",
+      "Gollapalli K",
+      "Wu L",
+      "Zhang W",
+      "Chen Y",
+      "Lauring MC",
+      "Whisenant DE",
+      "Bhavsar S",
+      "Lim J",
+      "Swerdlow SH",
+      "Bhagat G",
+      "Zhao Q",
+      "Berchowitz LE",
+      "Lafontaine DLJ",
+      "Wang J",
+      "Basu U"
     ],
     "journal": "Nature Genetics",
     "year": 2023,
-    "doi": "10.1038/s41588-023-01561-1"
+    "doi": "10.1038/s41588-023-01561-1",
+    "volume": "55(12)",
+    "pages": "2160–2174"
   },
   {
-    "title": "Bio-Inspired Microreactors Continuously Synthesize Glucose Precursor from CO2 with an Energy Conversion Efficiency…",
+    "title": "Bio‐Inspired Microreactors Continuously Synthesize Glucose Precursor from CO2 with an Energy Conversion Efficiency 3.3 Times of Rice",
     "authors": [
-      "Zhu YJ",
-      "et al."
+      "Zhu Y",
+      "Xie F",
+      "Wun TCK",
+      "Li K",
+      "Lin H",
+      "Tsoi CC",
+      "Jia H",
+      "Chai Y",
+      "Zhao Q",
+      "Lo BT",
+      "Leu S",
+      "Jia Y",
+      "Ren K",
+      "Zhang X"
     ],
     "journal": "Advanced Science",
     "year": 2023,
-    "doi": "10.1002/advs.202305629"
+    "doi": "10.1002/advs.202305629",
+    "volume": "11(6)"
   },
   {
-    "title": "Broad-spectrum kinome profiling identifies CDK6 upregulation as a driver of lenvatinib resistance…",
+    "title": "Broad-spectrum kinome profiling identifies CDK6 upregulation as a driver of lenvatinib resistance in hepatocellular carcinoma",
     "authors": [
       "Leung CON",
-      "et al."
+      "Yang Y",
+      "Leung RWH",
+      "So KKH",
+      "Guo HJ",
+      "Lei MML",
+      "Muliawan GK",
+      "Gao Y",
+      "Yu QQ",
+      "Yun JP",
+      "Ma S",
+      "Zhao Q",
+      "Lee TKW"
     ],
     "journal": "Nature Communications",
     "year": 2023,
     "doi": "10.1038/s41467-023-42360-w",
     "corresponding": [
       "Zhao Q"
-    ]
+    ],
+    "volume": "14(1)"
   },
   {
     "title": "Ynamide Coupling Reagent for the Chemical Cross-Linking of Proteins in Live Cells",
     "authors": [
-      "Li SR",
-      "et al."
+      "Li S",
+      "Zhu C",
+      "Zhao Q",
+      "Zhang ZM",
+      "Sun P",
+      "Li Z"
     ],
     "journal": "ACS Chemical Biology",
     "year": 2023,
-    "doi": "10.1021/acschembio.3c00149"
+    "doi": "10.1021/acschembio.3c00149",
+    "volume": "18(6)",
+    "pages": "1405–1415"
   },
   {
     "title": "The Human pre-replication complex is an open complex",
     "authors": [
       "Li J",
-      "et al."
+      "Dong J",
+      "Wang W",
+      "Yu D",
+      "Fan X",
+      "Hui YC",
+      "Lee CSK",
+      "Lam WH",
+      "Alary N",
+      "Yang Y",
+      "Zhang Y",
+      "Zhao Q",
+      "Chen CL",
+      "Tye BK",
+      "Dang S",
+      "Zhai Y"
     ],
     "journal": "Cell",
     "year": 2023,
-    "doi": "10.1016/j.cell.2022.12.008"
+    "doi": "10.1016/j.cell.2022.12.008",
+    "volume": "186(1)",
+    "pages": "98–111.e21"
   },
   {
     "title": "An optimized proteomics approach reveals novel alternative proteins in mouse liver development",
     "authors": [
       "Yang Y",
-      "et al."
+      "Wang H",
+      "Zhang Y",
+      "Chen L",
+      "Chen G",
+      "Bao Z",
+      "Yang Y",
+      "Xie Z",
+      "Zhao Q"
     ],
     "journal": "Molecular & Cellular Proteomics",
     "year": 2022,
@@ -227,13 +447,23 @@
     ],
     "topics": [
       "peptidein"
-    ]
+    ],
+    "volume": "22(1)",
+    "pages": "100480"
   },
   {
     "title": "Integrated Mass Spectrometry Reveals Celastrol As a Novel Catechol-O-methyltransferase Inhibitor",
     "authors": [
-      "Guo HJ",
-      "et al."
+      "Guo H",
+      "Yang Y",
+      "Zhang Q",
+      "Deng JR",
+      "Yang Y",
+      "Li S",
+      "So PK",
+      "Lam TC",
+      "Wong MK",
+      "Zhao Q"
     ],
     "journal": "ACS Chemical Biology",
     "year": 2022,
@@ -245,17 +475,34 @@
       "Guo HJ",
       "Zhang Q",
       "Yang Y"
-    ]
+    ],
+    "volume": "17(8)",
+    "pages": "2003–2009"
   },
   {
     "title": "Deficiency of ribosomal proteins reshapes the transcriptional and translational landscape in human cells",
     "authors": [
-      "Luan YZ",
-      "et al."
+      "Luan Y",
+      "Tang N",
+      "Yang J",
+      "Liu S",
+      "Cheng C",
+      "Wang Y",
+      "Chen C",
+      "Guo YN",
+      "Wang H",
+      "Zhao W",
+      "Zhao Q",
+      "Li W",
+      "Xiang M",
+      "Ju R",
+      "Xie Z"
     ],
     "journal": "Nucleic Acids Research",
     "year": 2022,
-    "doi": "10.1093/nar/gkac053"
+    "doi": "10.1093/nar/gkac053",
+    "volume": "50(12)",
+    "pages": "6601–6617"
   },
   {
     "title": "Two-photon fluorescent turn-on probes for highly efficient detection and profiling of thiols in live cells and tissues",
@@ -275,7 +522,12 @@
     "title": "The Small Open Reading Frame-Encoded Peptides: Advances in Methodologies and Functional Studies",
     "authors": [
       "Chen L",
-      "et al."
+      "Yang Y",
+      "Zhang Y",
+      "Li K",
+      "Cai H",
+      "Wang H",
+      "Zhao Q"
     ],
     "journal": "ChemBioChem",
     "year": 2021,
@@ -285,13 +537,21 @@
     ],
     "topics": [
       "peptidein"
-    ]
+    ],
+    "volume": "23(8)"
   },
   {
     "title": "An integrated approach for discovering non-canonical MHC-I peptides encoded by small open reading frames",
     "authors": [
       "Chen L",
-      "et al."
+      "Zhang Y",
+      "Yang Y",
+      "Yang Y",
+      "Li H",
+      "Dong X",
+      "Wang H",
+      "Xie Z",
+      "Zhao Q"
     ],
     "journal": "Journal of the American Society for Mass Spectrometry",
     "year": 2021,
@@ -338,7 +598,12 @@
     "title": "High-pH reversed-phase fractionated neural retina proteome of normal growing C57BL/6 mouse",
     "authors": [
       "Sze YH",
-      "et al."
+      "Zhao Q",
+      "Cheung JKW",
+      "Li KK",
+      "Tse DYY",
+      "To CH",
+      "Lam TC"
     ],
     "journal": "Scientific Data",
     "year": 2021,
@@ -349,8 +614,16 @@
   {
     "title": "Integrative Chemical Proteomics-Metabolomics Approach Reveals Acaca/Acacb as Direct Molecular Targets of PFOA",
     "authors": [
-      "Shao XJ",
-      "et al."
+      "Shao X",
+      "Ji F",
+      "Wang Y",
+      "Zhu L",
+      "Zhang Z",
+      "Du X",
+      "Chung ACK",
+      "Hong Y",
+      "Zhao Q",
+      "Cai Z"
     ],
     "journal": "Analytical Chemistry",
     "year": 2018,
@@ -393,7 +666,13 @@
     "title": "Broad-spectrum kinase profiling in live cells with lysine-targeted sulfonyl fluoride probes",
     "authors": [
       "Zhao Q",
-      "et al."
+      "Ouyang X",
+      "Wan X",
+      "Gajiwala KS",
+      "Kath JC",
+      "Jones LH",
+      "Burlingame AL",
+      "Taunton J"
     ],
     "journal": "Journal of the American Chemical Society",
     "year": 2017,
@@ -406,10 +685,23 @@
     ]
   },
   {
-    "title": "Comprehensive Analysis of Acylcarnitine Species in db/db Mouse Using a Novel Method of High-Resolution Parallel…",
+    "title": "Comprehensive Analysis of Acylcarnitine Species in db/db Mouse Using a Novel Method of High-Resolution Parallel Reaction Monitoring Reveals Widespread Metabolic Dysfunction Induced by Diabetes",
     "authors": [
       "Xiang L",
-      "et al."
+      "Wei J",
+      "Tian XY",
+      "Wang B",
+      "Chan W",
+      "Li S",
+      "Tang Z",
+      "Zhang H",
+      "Cheang WS",
+      "Zhao Q",
+      "Zhao H",
+      "Yang Z",
+      "Hong Y",
+      "Huang Y",
+      "Cai Z"
     ],
     "journal": "Analytical Chemistry",
     "year": 2017,
@@ -421,7 +713,18 @@
     "title": "Natural products triptolide, celastrol, and withaferin A inhibit the chaperone activity of peroxiredoxin I",
     "authors": [
       "Zhao Q",
-      "et al."
+      "Ding Y",
+      "Deng Z",
+      "Lee OY",
+      "Gao P",
+      "Chen P",
+      "Rose RJ",
+      "Zhao H",
+      "Zhang Z",
+      "Tao XP",
+      "Heck AJR",
+      "Kao R",
+      "Yang D"
     ],
     "journal": "Chemical Science",
     "year": 2015,
@@ -436,7 +739,10 @@
     "title": "A chemical probe for lysine malonylation",
     "authors": [
       "Bao X",
-      "et al."
+      "Zhao Q",
+      "Yang T",
+      "Fung YME",
+      "Li XD"
     ],
     "journal": "Angewandte Chemie International Edition",
     "year": 2013,
