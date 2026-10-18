@@ -44,7 +44,7 @@
     <ul class="alumni">
       {{ range . }}
       <li>
-        {{ with partial "photo-url.html" (dict "src" .photo "size" "160x160") }}<img class="alumni-photo" src="{{ . }}" alt="" loading="lazy">{{ end }}
+        {{ with partial "photo-url.html" (dict "src" .photo "size" "160x160") }}<img class="alumni-photo" src="{{ . }}" alt="" loading="lazy">{{ else }}<span class="alumni-photo alumni-initial" aria-hidden="true">{{ replaceRE `^(Dr\.|Mr\.|Ms\.|Prof\.)\s*` "" .name | truncate 1 "" }}</span>{{ end }}
         <span class="person-name">{{ cond (and $zh .name_zh) .name_zh .name }}</span>
         <span class="person-role">{{ i18n .role }}</span>
         {{ with partial "l.html" .now }}<span class="alumni-now">{{ i18n "nowAt" }}{{ . }}</span>{{ end }}

@@ -2,7 +2,7 @@
   "pi": {
     "name": "Dr. ZHAO Qian",
     "name_zh": "赵倩 博士",
-    "photo": "",
+    "photo": "images/team/zhao-qian.jpg",
     "title": {
       "en": "Associate Professor, Department of Life Sciences, The Hong Kong Polytechnic University",
       "zh": "香港理工大学生命科学系 副教授"
@@ -109,7 +109,8 @@
       "now": {
         "en": "Assistant Professor, Chongqing Medical University",
         "zh": "重庆医科大学 助理教授"
-      }
+      },
+      "photo": "images/team/yang-ying.jpg"
     },
     {
       "name": "Ms. Chloe TSE",
@@ -117,7 +118,8 @@
       "now": {
         "en": "Hospital Authority, Hong Kong",
         "zh": "香港医院管理局"
-      }
+      },
+      "photo": "images/team/tse-chloe.jpg"
     },
     {
       "name": "Ms. Annie WAN",
@@ -125,7 +127,8 @@
       "now": {
         "en": "PhD student, The University of Hong Kong",
         "zh": "香港大学 博士研究生"
-      }
+      },
+      "photo": "images/team/wan-annie.jpg"
     },
     {
       "name": "Mr. Blue WANG",
@@ -133,7 +136,8 @@
       "now": {
         "en": "PhD student, University of Florida",
         "zh": "美国佛罗里达大学 博士研究生"
-      }
+      },
+      "photo": "images/team/wang-blue.jpg"
     },
     {
       "name": "Ms. Winnky WONG",
@@ -141,7 +145,8 @@
       "now": {
         "en": "PhD student, The Hong Kong Polytechnic University",
         "zh": "香港理工大学 博士研究生"
-      }
+      },
+      "photo": "images/team/wong-winnky.jpg"
     }
   ]
 }
