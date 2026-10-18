@@ -16,22 +16,26 @@
     {
       "name": "Dr. YANG Yang",
       "name_zh": "杨阳",
-      "role": "postdoc"
+      "role": "postdoc",
+      "photo": "images/team/yang-yang.jpg"
     },
     {
       "name": "Dr. LI Shuqi",
       "name_zh": "李书奇",
-      "role": "postdoc"
+      "role": "postdoc",
+      "photo": "images/team/li-shuqi.jpg"
     },
     {
       "name": "Dr. ZHANG Yuanliang",
       "name_zh": "张元良",
-      "role": "postdoc"
+      "role": "postdoc",
+      "photo": "images/team/zhang-yuanliang.jpg"
     },
     {
       "name": "Dr. ZHANG Yue",
       "name_zh": "张月",
-      "role": "postdoc"
+      "role": "postdoc",
+      "photo": "images/team/zhang-yue.jpg"
     },
     {
       "name": "Dr. QIAO Sitan",
@@ -41,27 +45,32 @@
     {
       "name": "Dr. WU Shanshan",
       "name_zh": "吴珊珊",
-      "role": "visiting"
+      "role": "visiting",
+      "photo": "images/team/wu-shanshan.jpg"
     },
     {
       "name": "LI Kecheng",
       "name_zh": "李克成",
-      "role": "phd"
+      "role": "phd",
+      "photo": "images/team/li-kecheng.jpg"
     },
     {
       "name": "QI Ao",
       "name_zh": "齐澳",
-      "role": "phd"
+      "role": "phd",
+      "photo": "images/team/qi-ao.jpg"
     },
     {
       "name": "YANG Chenxi",
       "name_zh": "杨晨曦",
-      "role": "phd"
+      "role": "phd",
+      "photo": "images/team/yang-chenxi.jpg"
     },
     {
       "name": "REN Zhe",
       "name_zh": "任哲",
-      "role": "phd"
+      "role": "phd",
+      "photo": "images/team/ren-zhe.jpg"
     },
     {
       "name": "ZHU Tianyang",
@@ -72,16 +81,19 @@
     {
       "name": "ZHAN Hongyu",
       "name_zh": "詹红宇",
-      "role": "phd"
+      "role": "phd",
+      "photo": "images/team/zhan-hongyu.jpg"
     },
     {
       "name": "LIU Qi",
       "name_zh": "刘琦",
-      "role": "phd"
+      "role": "phd",
+      "photo": "images/team/liu-qi.jpg"
     },
     {
       "name": "Ayisha",
-      "role": "uris"
+      "role": "uris",
+      "photo": "images/team/ayisha.jpg"
     }
   ],
   "alumni": [
