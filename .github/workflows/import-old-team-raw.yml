@@ -1,0 +1,40 @@
+# One-off: save the old Weebly team page's raw HTML and every image it references, for matching photos to members.
+# Removed after use.
+name: Import old team page (raw)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download page and images
+        run: |
+          set -u
+          out=old-site-raw
+          mkdir -p "$out/img"
+          curl -fsSL --retry 3 -A "Mozilla/5.0" -o "$out/team.html" "https://zhaoqlab.weebly.com/team.html"
+          # every uploads/ image path that appears anywhere in the page (src, data-src, srcset, links, styles)
+          grep -oE '(https?:)?//[^"'"'"' )]*/uploads/[^"'"'"' )]*\.(jpe?g|png|gif|webp)|/uploads/[^"'"'"' )]*\.(jpe?g|png|gif|webp)' -i "$out/team.html" | sort -u > "$out/urls.txt"
+          wc -l "$out/urls.txt"
+          while read -r u; do
+            case "$u" in //*) u="https:$u";; /*) u="https://zhaoqlab.weebly.com$u";; esac
+            name=$(echo "$u" | sed 's#.*/134747280/##; s#/#__#g')
+            if curl -fsSL --retry 2 -A "Mozilla/5.0" -o "$out/img/$name" "$u" && file --mime-type -b "$out/img/$name" | grep -q '^image/'; then
+              echo "ok   $name"
+            else
+              echo "FAIL $u"; rm -f "$out/img/$name"
+            fi
+          done < "$out/urls.txt"
+      - name: Commit
+        run: |
+          git add old-site-raw
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Raw copy of the old team page for photo matching (temporary)"
+          git push
