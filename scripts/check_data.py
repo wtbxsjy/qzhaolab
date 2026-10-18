@@ -131,6 +131,19 @@ if news is not None:
 
 load("join.json")
 
+if (DATA / "gallery.json").exists():
+    gallery = load("gallery.json")
+    if gallery is not None:
+        if not isinstance(gallery, list):
+            problems.append("gallery.json: must be a list of pictures, e.g. [\"images/gallery/lab-life-01.jpg\"]")
+        else:
+            for i, g in enumerate(gallery):
+                src = g.get("src") if isinstance(g, dict) else g
+                if not isinstance(src, str) or not src.strip():
+                    problems.append(f"gallery.json → [{i}]: needs a path, either as a string or as \"src\"")
+                else:
+                    image(src, f"gallery.json → [{i}]")
+
 for w in warnings:
     print("Note: " + w)
 if problems:

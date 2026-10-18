@@ -1,0 +1,32 @@
+{{/* Lab-life album from data/gallery.json: a list of either a path string or {"src", "caption", "alt"}.
+     Pictures under assets/ are cropped to 3:2 thumbnails; click one to view it large. */}}
+{{ with site.Data.gallery }}
+<section class="section-tight" id="lab-life">
+  <h2 class="section-title small">{{ i18n "labLife" }}</h2>
+  <ul class="gallery" data-lightbox-group>
+    {{ range . }}
+      {{ $src := "" }}{{ $caption := "" }}{{ $alt := "" }}
+      {{ if reflect.IsMap . }}
+        {{ $src = .src }}
+        {{ with .caption }}{{ $caption = partial "l.html" . }}{{ end }}
+        {{ with .alt }}{{ $alt = partial "l.html" . }}{{ end }}
+      {{ else }}
+        {{ $src = . }}
+      {{ end }}
+      {{ $alt = $alt | default $caption | default (i18n "labLifePhoto") }}
+      {{ $thumbURL := $src | relURL }}{{ $largeURL := $thumbURL }}{{ $w := 600 }}{{ $h := 400 }}
+      {{ with resources.Get $src }}
+        {{ $thumb := .Fill "600x400 webp q78 Smart" }}
+        {{ $thumbURL = $thumb.RelPermalink }}{{ $w = $thumb.Width }}{{ $h = $thumb.Height }}
+        {{ $largeURL = (.Fit "1600x1600 webp q82").RelPermalink }}
+      {{ end }}
+      <li>
+        <a class="gallery-thumb" href="{{ $largeURL }}" data-lightbox data-caption="{{ $caption }}">
+          <img src="{{ $thumbURL }}" alt="{{ $alt }}" loading="lazy" width="{{ $w }}" height="{{ $h }}">
+        </a>
+        {{ with $caption }}<p class="gallery-caption">{{ . }}</p>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

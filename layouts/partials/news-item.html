@@ -10,7 +10,7 @@
   <div class="news-body">
     <p>{{ partial "l.html" (dict "en" $item.en "zh" $item.zh) | markdownify }}</p>
     {{ with $images }}
-    <ul class="news-images{{ if $.compact }} compact{{ end }}">
+    <ul class="news-images{{ if $.compact }} compact{{ end }}" data-lightbox-group>
       {{ range . }}
         {{ $src := "" }}{{ $alt := "" }}{{ $caption := "" }}
         {{ if reflect.IsMap . }}
@@ -38,7 +38,7 @@
           {{ $thumbURL = $src | relURL }}{{ $largeURL = $thumbURL }}
         {{ end }}
         <li>
-          <a class="news-thumb{{ if $whole }} whole{{ end }}" href="{{ $largeURL }}" data-caption="{{ $caption }}">
+          <a class="news-thumb{{ if $whole }} whole{{ end }}" href="{{ $largeURL }}" data-lightbox data-caption="{{ $caption }}">
             <img src="{{ $thumbURL }}" alt="{{ $alt }}" loading="lazy" width="{{ $w }}" height="{{ $h }}">
           </a>
         </li>

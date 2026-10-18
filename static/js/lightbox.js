@@ -1,5 +1,5 @@
-// Click a news picture to view it large. Arrow keys or the side buttons move between
-// pictures of the same news item; Esc, the close button or a click outside closes it.
+// Click a picture (news or lab-life album) to view it large. Arrow keys or the side buttons move between
+// pictures of the same group (one news item, or the whole album); Esc, the close button or a click outside closes it.
 // Without this script, the thumbnail link simply opens the large image.
 (function () {
   var dialog = document.getElementById("lightbox");
@@ -23,10 +23,11 @@
   }
 
   document.addEventListener("click", function (e) {
-    var link = e.target.closest("a.news-thumb");
+    var link = e.target.closest("a[data-lightbox]");
     if (!link) return;
     e.preventDefault();
-    group = Array.prototype.slice.call(link.closest(".news-images").querySelectorAll("a.news-thumb"));
+    var box = link.closest("[data-lightbox-group]") || link.parentNode;
+    group = Array.prototype.slice.call(box.querySelectorAll("a[data-lightbox]"));
     show(group.indexOf(link));
     dialog.showModal();
   });

@@ -24,6 +24,7 @@
 | `data/publications.json` | 论文列表 |
 | `data/news.json` | 新闻动态 |
 | `data/join.json` | 招聘信息：申请方式、岗位、要求、经费来源 |
+| `data/gallery.json` | 团队成员页底部的「组内生活」相册 |
 
 其余文件一般不需要改：
 
@@ -122,6 +123,24 @@
 - 文件名建议用姓名拼音，只用小写英文字母、数字和连字符，例如 `zhang-yuanliang.jpg`。
 - 不填 `photo` 时显示姓氏首字母头像。路径写错时，发布前的数据检查会报错。
 
+### 组内生活相册
+
+显示在团队成员页底部。照片放进 `assets/images/gallery/`，再在 `data/gallery.json` 里加一项。列表顺序就是显示顺序，新照片建议加在最前面：
+
+```json
+[
+  {
+    "src": "images/gallery/2026-10-christmas.jpg",
+    "caption": { "en": "Christmas party 2026", "zh": "2026 年圣诞聚会" }
+  },
+  "images/gallery/lab-life-01.jpg"
+]
+```
+
+- 每项可以只写路径，也可以加 `caption`（图注，显示在照片下方和放大视图中）。目前从旧网站搬来的 24 张都没有图注，可以按需补上。
+- 网站会自动裁成 3:2 缩略图并压缩，点击放大后可用方向键浏览整个相册。
+- 相册为空（`[]`）或删除 `gallery.json` 时，这一栏不显示。
+
 ### 添加论文
 
 **推荐做法：按 DOI[^doi] 自动添加。** 打开仓库的 Actions 页面，左侧选「Update publications」，点「Run workflow」，填入：
@@ -202,7 +221,7 @@ content/en, content/zh   页面占位文件（只有标题）；research/_conten
 hugo.toml            语言与导航栏
 i18n/                界面固定文字
 layouts/             页面模板
-assets/              需要自动压缩的图片（新闻配图、成员照片）
+assets/              需要自动压缩的图片（新闻配图、成员照片、组内生活相册）
 static/              样式、脚本、字体、图片
 scripts/             数据检查、论文更新、背景图生成脚本
 .github/workflows/   自动发布、论文更新工作流
