@@ -1,6 +1,6 @@
 {
   "pi": {
-    "name": "Dr. Zhao Qian",
+    "name": "Dr. ZHAO Qian",
     "name_zh": "赵倩 博士",
     "photo": "",
     "title": {
@@ -14,65 +14,68 @@
   },
   "members": [
     {
-      "name": "Dr. Yang Yang",
+      "name": "Dr. YANG Yang",
       "name_zh": "杨阳",
       "role": "postdoc"
     },
     {
-      "name": "Dr. Li Shuqi",
+      "name": "Dr. LI Shuqi",
       "name_zh": "李书奇",
       "role": "postdoc"
     },
     {
-      "name": "Dr. Zhang Yuanliang",
+      "name": "Dr. ZHANG Yuanliang",
+      "name_zh": "张元良",
       "role": "postdoc"
     },
     {
-      "name": "Dr. Zhang Yue",
+      "name": "Dr. ZHANG Yue",
       "name_zh": "张月",
       "role": "postdoc"
     },
     {
-      "name": "Dr. Qiao Sitan",
+      "name": "Dr. QIAO Sitan",
       "name_zh": "乔斯坦",
       "role": "postdoc"
     },
     {
-      "name": "Dr. Wu Shanshan",
+      "name": "Dr. WU Shanshan",
       "name_zh": "吴珊珊",
       "role": "visiting"
     },
     {
-      "name": "Li Kecheng",
+      "name": "LI Kecheng",
       "name_zh": "李克成",
       "role": "phd"
     },
     {
-      "name": "Qi Ao",
+      "name": "QI Ao",
       "name_zh": "齐澳",
       "role": "phd"
     },
     {
-      "name": "Yang Chenxi",
+      "name": "YANG Chenxi",
       "name_zh": "杨晨曦",
       "role": "phd"
     },
     {
-      "name": "Ren Zhe",
+      "name": "REN Zhe",
       "name_zh": "任哲",
       "role": "phd"
     },
     {
-      "name": "Zhu Tianyang",
+      "name": "ZHU Tianyang",
+      "name_zh": "朱天阳",
       "role": "phd"
     },
     {
-      "name": "Zhan Hongyu",
+      "name": "ZHAN Hongyu",
       "name_zh": "詹红宇",
       "role": "phd"
     },
     {
-      "name": "Liu Qi",
+      "name": "LIU Qi",
+      "name_zh": "刘琦",
       "role": "phd"
     },
     {
@@ -82,7 +85,7 @@
   ],
   "alumni": [
     {
-      "name": "Dr. Shang Jin",
+      "name": "Dr. SHANG Jin",
       "name_zh": "尚进",
       "role": "phd",
       "now": {
@@ -91,7 +94,8 @@
       }
     },
     {
-      "name": "Dr. Chen Lei",
+      "name": "Dr. CHEN Lei",
+      "name_zh": "陈蕾",
       "role": "postdoc",
       "now": {
         "en": "Research Assistant Professor, The University of Hong Kong",
@@ -99,7 +103,8 @@
       }
     },
     {
-      "name": "Dr. Yang Ying",
+      "name": "Dr. YANG Ying",
+      "name_zh": "杨颖",
       "role": "phd",
       "now": {
         "en": "Assistant Professor, Chongqing Medical University",
@@ -107,7 +112,7 @@
       }
     },
     {
-      "name": "Ms. Chloe Tse",
+      "name": "Ms. Chloe TSE",
       "role": "mphil",
       "now": {
         "en": "Hospital Authority, Hong Kong",
@@ -115,7 +120,7 @@
       }
     },
     {
-      "name": "Ms. Annie Wan",
+      "name": "Ms. Annie WAN",
       "role": "fyp",
       "now": {
         "en": "PhD student, The University of Hong Kong",
@@ -123,7 +128,7 @@
       }
     },
     {
-      "name": "Mr. Blue Wang",
+      "name": "Mr. Blue WANG",
       "role": "fyp",
       "now": {
         "en": "PhD student, University of Florida",
@@ -131,7 +136,7 @@
       }
     },
     {
-      "name": "Ms. Winnky Wong",
+      "name": "Ms. Winnky WONG",
       "role": "fyp",
       "now": {
         "en": "PhD student, The Hong Kong Polytechnic University",

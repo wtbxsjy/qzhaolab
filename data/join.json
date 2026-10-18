@@ -4,51 +4,102 @@
     "zh": "欢迎有志于科研的同学和学者加入课题组。课题组提供质谱技术培训，无需相关经验。"
   },
   "howToApply": {
-    "heading": { "en": "How to apply", "zh": "申请方式" },
+    "heading": {
+      "en": "How to apply",
+      "zh": "申请方式"
+    },
     "text": {
-      "en": "Email your curriculum vitae, full publication list and a summary of your previous experience to Dr. Zhao Qian at [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk). Please use the subject line \"Postdoctoral application – Your Name\" or \"Doctoral application – Your Name\".",
+      "en": "Email your curriculum vitae, full publication list and a summary of your previous experience to Dr. ZHAO Qian at [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk). Please use the subject line \"Postdoctoral application – Your Name\" or \"Doctoral application – Your Name\".",
       "zh": "请将个人简历、完整论文列表及过往研究经历发送至赵倩博士邮箱 [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk)。邮件标题请写为「Postdoctoral application – 姓名」或「Doctoral application – 姓名」。"
     }
   },
   "positions": [
     {
-      "title": { "en": "Postdoctoral Fellow", "zh": "博士后研究员" },
+      "title": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博士后研究员"
+      },
       "groups": [
         {
-          "heading": { "en": "Responsibilities", "zh": "工作内容" },
+          "heading": {
+            "en": "Responsibilities",
+            "zh": "工作内容"
+          },
           "items": [
-            { "en": "Conduct research, analyze results and draft manuscripts.", "zh": "开展科研工作、分析实验结果并撰写论文。" },
-            { "en": "Help supervise graduate students and support laboratory management.", "zh": "协助指导研究生，参与实验室管理。" },
-            { "en": "Apply independently for regional, national or international research funding.", "zh": "独立申请地区、国家或国际科研基金。" }
+            {
+              "en": "Conduct research, analyze results and draft manuscripts.",
+              "zh": "开展科研工作、分析实验结果并撰写论文。"
+            },
+            {
+              "en": "Help supervise graduate students and support laboratory management.",
+              "zh": "协助指导研究生，参与实验室管理。"
+            },
+            {
+              "en": "Apply independently for regional, national or international research funding.",
+              "zh": "独立申请地区、国家或国际科研基金。"
+            }
           ]
         },
         {
-          "heading": { "en": "Requirements", "zh": "申请条件" },
+          "heading": {
+            "en": "Requirements",
+            "zh": "申请条件"
+          },
           "items": [
-            { "en": "A PhD, preferably in bioinformatics, or in a related field such as molecular or structural biology, cell biology, physiology, chemical biology, proteomics or pharmacy.", "zh": "已获博士学位，生物信息学方向优先；分子或结构生物学、细胞生物学、生理学、化学生物学、蛋白质组学、药学等相关方向亦可。" },
-            { "en": "At least one first-author paper in a Science Citation Index journal, accepted or in press.", "zh": "至少有一篇已接收或在印的第一作者科学引文索引期刊论文。" },
-            { "en": "Fluent written and spoken English.", "zh": "英语书面与口语表达流利。" },
-            { "en": "Initiative and enthusiasm for research.", "zh": "积极主动，对科研充满热情。" }
+            {
+              "en": "A PhD, preferably in bioinformatics, or in a related field such as molecular or structural biology, cell biology, physiology, chemical biology, proteomics or pharmacy.",
+              "zh": "已获博士学位，生物信息学方向优先；分子或结构生物学、细胞生物学、生理学、化学生物学、蛋白质组学、药学等相关方向亦可。"
+            },
+            {
+              "en": "At least one first-author paper in a Science Citation Index journal, accepted or in press.",
+              "zh": "至少有一篇已接收或在印的第一作者科学引文索引期刊论文。"
+            },
+            {
+              "en": "Fluent written and spoken English.",
+              "zh": "英语书面与口语表达流利。"
+            },
+            {
+              "en": "Initiative and enthusiasm for research.",
+              "zh": "积极主动，对科研充满热情。"
+            }
           ]
         }
       ]
     },
     {
-      "title": { "en": "PhD Student", "zh": "博士研究生" },
+      "title": {
+        "en": "PhD Student",
+        "zh": "博士研究生"
+      },
       "groups": [
         {
-          "heading": { "en": "Requirements", "zh": "申请条件" },
+          "heading": {
+            "en": "Requirements",
+            "zh": "申请条件"
+          },
           "items": [
-            { "en": "A bachelor's or master's degree in molecular biology, structural biology, cell biology or bioinformatics; bioinformatics is preferred.", "zh": "具有分子生物学、结构生物学、细胞生物学或生物信息学学士或硕士学位，生物信息学背景优先。" },
-            { "en": "Enthusiasm for research, self-motivation and a strong sense of responsibility.", "zh": "热爱科研，有自驱力和责任心。" },
-            { "en": "Overseas applicants may need to submit International English Language Testing System or Test of English as a Foreign Language scores.", "zh": "海外申请者可能需要提交雅思（International English Language Testing System）或托福（Test of English as a Foreign Language）成绩。" }
+            {
+              "en": "A bachelor's or master's degree in molecular biology, structural biology, cell biology or bioinformatics; bioinformatics is preferred.",
+              "zh": "具有分子生物学、结构生物学、细胞生物学或生物信息学学士或硕士学位，生物信息学背景优先。"
+            },
+            {
+              "en": "Enthusiasm for research, self-motivation and a strong sense of responsibility.",
+              "zh": "热爱科研，有自驱力和责任心。"
+            },
+            {
+              "en": "Overseas applicants may need to submit International English Language Testing System or Test of English as a Foreign Language scores.",
+              "zh": "海外申请者可能需要提交雅思（International English Language Testing System）或托福（Test of English as a Foreign Language）成绩。"
+            }
           ]
         }
       ]
     }
   ],
   "funding": {
-    "heading": { "en": "Funding", "zh": "科研经费" },
+    "heading": {
+      "en": "Funding",
+      "zh": "科研经费"
+    },
     "text": {
       "en": "Our projects are supported by the Research Grants Council of Hong Kong, the Health and Medical Research Fund, the Innovation and Technology Fund, and the National Natural Science Foundation of China.",
       "zh": "课题组项目获香港研究资助局、医疗卫生研究基金、创新及科技基金以及国家自然科学基金资助。"

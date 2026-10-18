@@ -63,8 +63,8 @@
 ```json
 {
   "date": "2026-10-05",
-  "en": "Dr. Qiao joins the lab as a Postdoctoral Fellow.",
-  "zh": "Qiao 博士以博士后研究员身份加入课题组。"
+  "en": "Dr. QIAO Sitan joins the lab as a Postdoctoral Fellow.",
+  "zh": "乔斯坦博士以博士后研究员身份加入课题组。"
 },
 ```
 
@@ -76,7 +76,7 @@
 ```json
 {
   "date": "2026-09-27",
-  "en": "PhD candidate Ms YANG Chenxi wins the HUPO Travel Award! Congratulations!",
+  "en": "PhD candidate Ms. YANG Chenxi wins the HUPO Travel Award! Congratulations!",
   "zh": "博士研究生杨晨曦荣获 HUPO 旅行奖！祝贺！",
   "images": [
     "images/news/2026-09-27-hupo-award.jpg",
@@ -100,15 +100,15 @@
 在 `data/team.json` 的 `members` 中增删。毕业后，把该成员移到 `alumni`，并加上去向：
 
 ```json
-{ "name": "Li Kecheng", "name_zh": "李克成", "role": "phd", "photo": "images/team/li-kecheng.jpg" }
+{ "name": "LI Kecheng", "name_zh": "李克成", "role": "phd", "photo": "images/team/li-kecheng.jpg" }
 ```
 
 ```json
-{ "name": "Dr. Yang Ying", "role": "phd", "now": { "en": "Assistant Professor, Chongqing Medical University", "zh": "重庆医科大学 助理教授" } }
+{ "name": "Dr. YANG Ying", "name_zh": "杨颖", "role": "phd", "now": { "en": "Assistant Professor, Chongqing Medical University", "zh": "重庆医科大学 助理教授" } }
 ```
 
 - `role` 可选：`postdoc`（博士后研究员）、`phd`（博士研究生）、`mphil`（哲学硕士研究生）、`visiting`（访问学者）、`uris`（本科生研究助理）、`fyp`（本科毕业设计学生）。
-- 英文名统一写成「姓在前、名在后」，例如 `Dr. Yang Ying`、`Zhan Hongyu`；英文名字（如 Chloe Tse）按本人习惯写。
+- 英文名统一写成「姓在前、名在后」，姓氏全部大写，例如 `Dr. YANG Ying`、`ZHAN Hongyu`；有英文名的成员写成「英文名 + 大写姓氏」，例如 `Ms. Chloe TSE`。新闻正文里提到人名时也用同样写法。
 - `name_zh` 填中文名；不填时中文页面显示英文名。
 - 成员顺序就是网页上的显示顺序。
 
