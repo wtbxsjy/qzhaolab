@@ -22,7 +22,10 @@
   {
     "date": "2026-05-29",
     "en": "Dr. YANG Yang wins the Best Poster Award at iCover 2026.",
-    "zh": "杨阳博士在 iCover 2026 会议上获得最佳海报奖。"
+    "zh": "杨阳博士在 iCover 2026 会议上获得最佳海报奖。",
+    "images": [
+      "images/news/2026-05-29-icover-best-poster.jpg"
+    ]
   },
   {
     "date": "2026-03-02",
@@ -32,12 +35,19 @@
   {
     "date": "2025-11-06",
     "en": "Dr. ZHAO Qian presents the lab's immunology research at the 17th Annual Meeting of the Chinese Society for Immunology.",
-    "zh": "赵倩老师在中国免疫学会第十七届学术大会上报告课题组的免疫学研究工作。"
+    "zh": "赵倩老师在中国免疫学会第十七届学术大会上报告课题组的免疫学研究工作。",
+    "images": [
+      "images/news/2025-11-06-csi-annual-meeting.jpg"
+    ]
   },
   {
     "date": "2025-10-12",
     "en": "Dr. YANG Yang presents our work on functional microproteins in activated T cells at the 12th Asia Oceania Human Proteome Organization Congress.",
-    "zh": "杨阳博士在第十二届亚洲大洋洲人类蛋白质组组织大会上报告活化 T 细胞中功能性微蛋白的研究。"
+    "zh": "杨阳博士在第十二届亚洲大洋洲人类蛋白质组组织大会上报告活化 T 细胞中功能性微蛋白的研究。",
+    "images": [
+      "images/news/2025-10-12-aohupo-1.jpg",
+      "images/news/2025-10-12-aohupo-2.jpg"
+    ]
   },
   {
     "date": "2025-08-28",
@@ -47,7 +57,10 @@
   {
     "date": "2025-07-01",
     "en": "A new paper by Dr. LI Shuqi (first author) is published in *Angewandte Chemie International Edition*.",
-    "zh": "李书奇博士（第一作者）的新论文发表于 *Angewandte Chemie International Edition*。"
+    "zh": "李书奇博士（第一作者）的新论文发表于 *Angewandte Chemie International Edition*。",
+    "images": [
+      "images/news/2025-07-01-angewandte-paper.png"
+    ]
   },
   {
     "date": "2025-03-31",
@@ -57,12 +70,19 @@
   {
     "date": "2025-03-22",
     "en": "Dr. ZHAO Qian presents mass spectrometry-based discovery of novel microproteins and non-canonical MHC class I and II peptides for tumor immunotherapy at the Hong Kong Society of Immunology Annual Congress 2024/25.",
-    "zh": "赵倩老师在香港免疫学会 2024/25 年会上报告基于质谱的新型微蛋白及非经典 MHC I/II 类肽段发现，及其在肿瘤免疫治疗中的应用。"
+    "zh": "赵倩老师在香港免疫学会 2024/25 年会上报告基于质谱的新型微蛋白及非经典 MHC I/II 类肽段发现，及其在肿瘤免疫治疗中的应用。",
+    "images": [
+      "images/news/2025-03-22-hksi-congress.jpg"
+    ]
   },
   {
     "date": "2025-03-17",
     "en": "Dr. ZHAO Qian speaks on microproteins in cancer biology and therapy at the LSCCB International Conference 2025 (17–19 March).",
-    "zh": "赵倩老师在 LSCCB 2025 国际会议（3 月 17–19 日）上报告微蛋白在肿瘤生物学与治疗中的作用。"
+    "zh": "赵倩老师在 LSCCB 2025 国际会议（3 月 17–19 日）上报告微蛋白在肿瘤生物学与治疗中的作用。",
+    "images": [
+      "images/news/2025-03-17-lsccb-1.jpg",
+      "images/news/2025-03-17-lsccb-2.jpg"
+    ]
   },
   {
     "date": "2025-03-03",
@@ -72,12 +92,18 @@
   {
     "date": "2025-02-04",
     "en": "A new paper by Dr. Yang is published in *Molecular & Cellular Proteomics*.",
-    "zh": "Yang 博士的新论文发表于 *Molecular & Cellular Proteomics*。"
+    "zh": "Yang 博士的新论文发表于 *Molecular & Cellular Proteomics*。",
+    "images": [
+      "images/news/2025-02-04-mcp-paper.png"
+    ]
   },
   {
     "date": "2025-01-15",
     "en": "A paper by ZHANG Yuanliang is accepted in *Analytical Chemistry*.",
-    "zh": "张元良的论文被 *Analytical Chemistry* 接收。"
+    "zh": "张元良的论文被 *Analytical Chemistry* 接收。",
+    "images": [
+      "images/news/2025-01-15-analytical-chemistry-paper.png"
+    ]
   },
   {
     "date": "2025-01-03",
@@ -87,12 +113,19 @@
   {
     "date": "2024-10-20",
     "en": "Dr. ZHAO Qian gives an oral presentation at the 23rd Human Proteome Organization World Congress (20–24 October) on a proteomics workflow that identifies a microprotein restoring cancer drug sensitivity.",
-    "zh": "赵倩老师在第二十三届国际人类蛋白质组组织大会（10 月 20–24 日）作口头报告，介绍发现可恢复肿瘤药物敏感性的微蛋白的蛋白质组学流程。"
+    "zh": "赵倩老师在第二十三届国际人类蛋白质组组织大会（10 月 20–24 日）作口头报告，介绍发现可恢复肿瘤药物敏感性的微蛋白的蛋白质组学流程。",
+    "images": [
+      "images/news/2024-10-20-hupo-zhao-talk.jpg",
+      "images/news/2024-10-20-hupo-congress-logo.webp"
+    ]
   },
   {
     "date": "2024-10-20",
     "en": "SHANG Jin presents work on the antiviral activity of hydroxychloroquine at the 23rd Human Proteome Organization World Congress, identifying Cathepsin L as a potential drug target.",
-    "zh": "尚进在第二十三届国际人类蛋白质组组织大会上报告羟氯喹抗病毒活性的研究，发现组织蛋白酶 L 为潜在药物靶点。"
+    "zh": "尚进在第二十三届国际人类蛋白质组组织大会上报告羟氯喹抗病毒活性的研究，发现组织蛋白酶 L 为潜在药物靶点。",
+    "images": [
+      "images/news/2024-10-20-hupo-shang-jin.jpg"
+    ]
   },
   {
     "date": "2024-10-15",
@@ -107,7 +140,10 @@
   {
     "date": "2024-09-28",
     "en": "A paper by YANG Yang is accepted in *Journal of Medicinal Chemistry*.",
-    "zh": "杨阳的论文被 *Journal of Medicinal Chemistry* 接收。"
+    "zh": "杨阳的论文被 *Journal of Medicinal Chemistry* 接收。",
+    "images": [
+      "images/news/2024-09-28-jmc-paper.png"
+    ]
   },
   {
     "date": "2024-09-16",
@@ -127,22 +163,37 @@
   {
     "date": "2024-07-01",
     "en": "Dr. ZHAO Qian presents the lab's research at the 18th Chinese International Peptide Symposium.",
-    "zh": "赵倩老师在第十八届中国国际多肽学术会议上介绍课题组研究方向。"
+    "zh": "赵倩老师在第十八届中国国际多肽学术会议上介绍课题组研究方向。",
+    "images": [
+      "images/news/2024-07-01-cps-1.jpg",
+      "images/news/2024-07-01-cps-2.jpg"
+    ]
   },
   {
     "date": "2024-07-01",
     "en": "SHANG Jin wins the Outstanding Poster Award from *Exploration of Drug Science*.",
-    "zh": "尚进获得 *Exploration of Drug Science* 优秀海报奖。"
+    "zh": "尚进获得 *Exploration of Drug Science* 优秀海报奖。",
+    "images": [
+      "images/news/2024-07-01-shang-jin-poster-1.jpg",
+      "images/news/2024-07-01-shang-jin-poster-2.jpg"
+    ]
   },
   {
     "date": "2024-05-18",
     "en": "SHANG Jin wins the Best Poster Award at the 2024 Hong Kong–Jiangsu Symposium on Drug Discovery and Development.",
-    "zh": "尚进在 2024 年港苏药物研发学术研讨会上获得最佳海报奖。"
+    "zh": "尚进在 2024 年港苏药物研发学术研讨会上获得最佳海报奖。",
+    "images": [
+      "images/news/2024-05-18-shang-jin-best-poster-1.jpg",
+      "images/news/2024-05-18-shang-jin-best-poster-2.jpg"
+    ]
   },
   {
     "date": "2024-01-05",
     "en": "Dr. ZHAO Qian is named a 2024 Rising Star in Proteomics and Metabolomics by the *Journal of Proteome Research*.",
-    "zh": "赵倩老师获 *Journal of Proteome Research* 评选为 2024 年蛋白质组学与代谢组学领域新星。"
+    "zh": "赵倩老师获 *Journal of Proteome Research* 评选为 2024 年蛋白质组学与代谢组学领域新星。",
+    "images": [
+      "images/news/2024-01-05-rising-star.png"
+    ]
   },
   {
     "date": "2024-01-01",
@@ -152,7 +203,10 @@
   {
     "date": "2023-10-10",
     "en": "A collaboration with Prof. Terence LEE is accepted in *Nature Communications*.",
-    "zh": "与 Terence Lee 教授的合作论文被 *Nature Communications* 接收。"
+    "zh": "与 Terence Lee 教授的合作论文被 *Nature Communications* 接收。",
+    "images": [
+      "images/news/2023-10-10-nature-communications-paper.png"
+    ]
   },
   {
     "date": "2023-01-01",
@@ -162,7 +216,10 @@
   {
     "date": "2022-12-05",
     "en": "A paper by YANG Ying is accepted in *Molecular & Cellular Proteomics*.",
-    "zh": "杨颖的论文被 *Molecular & Cellular Proteomics* 接收。"
+    "zh": "杨颖的论文被 *Molecular & Cellular Proteomics* 接收。",
+    "images": [
+      "images/news/2022-12-05-mcp-paper.png"
+    ]
   },
   {
     "date": "2022-08-31",
@@ -182,22 +239,36 @@
   {
     "date": "2022-03-18",
     "en": "A paper is published in *ACS Chemical Biology*.",
-    "zh": "课题组论文发表于 *ACS Chemical Biology*。"
+    "zh": "课题组论文发表于 *ACS Chemical Biology*。",
+    "images": [
+      "images/news/2022-03-18-acs-chemical-biology-paper.png"
+    ]
   },
   {
     "date": "2021-12-04",
     "en": "Dr. ZHAO Qian presents the lab's research at the National Natural Science Foundation of China – Research Grants Council Forum for Young Scholars (4–5 December).",
-    "zh": "赵倩老师在国家自然科学基金委员会与香港研究资助局青年学者论坛（12 月 4–5 日）上介绍课题组研究。"
+    "zh": "赵倩老师在国家自然科学基金委员会与香港研究资助局青年学者论坛（12 月 4–5 日）上介绍课题组研究。",
+    "images": [
+      "images/news/2021-12-04-nsfc-rgc-forum-1.png",
+      "images/news/2021-12-04-nsfc-rgc-forum-2.jpg"
+    ]
   },
   {
     "date": "2021-11-13",
     "en": "Congratulations to Henry, Ka Ming and Winnky WONG on their graduation.",
-    "zh": "祝贺 Henry、Ka Ming 和 Winnky 毕业！"
+    "zh": "祝贺 Henry、Ka Ming 和 Winnky 毕业！",
+    "images": [
+      "images/news/2021-11-13-graduation.jpg"
+    ]
   },
   {
     "date": "2021-10-13",
     "en": "Dr. ZHAO Qian gives an oral presentation at the 11th Chinese Human Proteome Organization Congress (13–15 October).",
-    "zh": "赵倩老师在第十一届中国人类蛋白质组组织大会（10 月 13–15 日）上作口头报告。"
+    "zh": "赵倩老师在第十一届中国人类蛋白质组组织大会（10 月 13–15 日）上作口头报告。",
+    "images": [
+      "images/news/2021-10-13-cnhupo-1.jpg",
+      "images/news/2021-10-13-cnhupo-2.jpg"
+    ]
   },
   {
     "date": "2021-09-01",
@@ -207,7 +278,10 @@
   {
     "date": "2021-08-12",
     "en": "Dr. ZHAO Qian, YANG Yang and ZHANG Yuanliang present a poster at the 1st Chinese American Society for Mass Spectrometry Virtual Conference.",
-    "zh": "赵倩老师、杨阳和张元良在第一届美国华人质谱学会线上会议上展示海报。"
+    "zh": "赵倩老师、杨阳和张元良在第一届美国华人质谱学会线上会议上展示海报。",
+    "images": [
+      "images/news/2021-08-12-casms-poster.png"
+    ]
   },
   {
     "date": "2021-08-06",
