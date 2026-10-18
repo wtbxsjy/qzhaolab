@@ -151,14 +151,16 @@ img { max-width: 100%; display: block; }
 .pi-text { flex: 1 1 420px; min-width: 0; }
 .pi-text h3 { margin: 0; font-family: var(--serif); font-size: 30px; }
 .role { margin: 4px 0 16px; color: var(--accent); font-weight: 500; }
-.people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px; }
+.people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 32px 24px; }
+.people .avatar { width: 120px; height: 120px; font-size: 40px; }
 .person { display: flex; flex-direction: column; gap: 4px; }
 .avatar { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; background: var(--surface-2); color: var(--ink); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 32px; font-weight: 600; margin-bottom: 8px; }
 .pi-photo.avatar { width: 220px; height: 260px; border-radius: 12px; font-size: 72px; }
 .person-name { font-weight: 600; }
 .person-role, .alumni-now { font-size: 15px; color: var(--ink-3); }
 .alumni { list-style: none; margin: 0; padding: 0; }
-.alumni li { display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.alumni li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.alumni-photo { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
 
 /* Term notes */
 .notes { max-width: 760px; margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 15px; color: var(--ink-3); }

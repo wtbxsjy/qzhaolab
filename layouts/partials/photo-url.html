@@ -1,0 +1,13 @@
+{{/* Returns the web address of a photo, or "" when there is none.
+     Context: dict "src" (path from a data file) and "size" (e.g. "400x400").
+     A photo under assets/ is cropped to that size around its most interesting part and saved as WebP;
+     a photo under static/ is used as it is. */}}
+{{ $url := "" }}
+{{ with .src }}
+  {{ with resources.Get . }}
+    {{ $url = (.Fill (printf "%s webp q80 Smart" $.size)).RelPermalink }}
+  {{ else }}
+    {{ $url = . | relURL }}
+  {{ end }}
+{{ end }}
+{{ return $url }}

@@ -12,7 +12,7 @@
   <section class="section-tight">
     <h2 class="section-title small">{{ i18n "principalInvestigator" }}</h2>
     <div class="pi">
-      {{ with .photo }}<img class="pi-photo" src="{{ . | relURL }}" alt="{{ $name }}">{{ else }}<div class="pi-photo avatar" aria-hidden="true">{{ replaceRE `^(Dr\.|Mr\.|Ms\.|Prof\.)\s*` "" .name | truncate 1 "" }}</div>{{ end }}
+      {{ with partial "photo-url.html" (dict "src" .photo "size" "440x520") }}<img class="pi-photo" src="{{ . }}" alt="{{ $name }}">{{ else }}<div class="pi-photo avatar" aria-hidden="true">{{ replaceRE `^(Dr\.|Mr\.|Ms\.|Prof\.)\s*` "" .name | truncate 1 "" }}</div>{{ end }}
       <div class="pi-text">
         <h3>{{ $name }}</h3>
         <p class="role">{{ partial "l.html" .title }}</p>
@@ -30,7 +30,7 @@
       {{ $name := cond (and $zh .name_zh) .name_zh .name }}
       {{ $initial := replaceRE `^(Dr\.|Mr\.|Ms\.|Prof\.)\s*` "" .name | truncate 1 "" }}
       <li class="person">
-        {{ with .photo }}<img class="avatar" src="{{ . | relURL }}" alt="">{{ else }}<span class="avatar" aria-hidden="true">{{ $initial }}</span>{{ end }}
+        {{ with partial "photo-url.html" (dict "src" .photo "size" "400x400") }}<img class="avatar" src="{{ . }}" alt="" loading="lazy">{{ else }}<span class="avatar" aria-hidden="true">{{ $initial }}</span>{{ end }}
         <span class="person-name">{{ $name }}</span>
         <span class="person-role">{{ i18n .role }}</span>
       </li>
@@ -44,9 +44,10 @@
     <ul class="alumni">
       {{ range . }}
       <li>
+        {{ with partial "photo-url.html" (dict "src" .photo "size" "160x160") }}<img class="alumni-photo" src="{{ . }}" alt="" loading="lazy">{{ end }}
         <span class="person-name">{{ cond (and $zh .name_zh) .name_zh .name }}</span>
         <span class="person-role">{{ i18n .role }}</span>
-        {{ with partial "l.html" .now }}<span class="alumni-now">{{ i18n "nowAt" }}: {{ . }}</span>{{ end }}
+        {{ with partial "l.html" .now }}<span class="alumni-now">{{ i18n "nowAt" }}{{ . }}</span>{{ end }}
       </li>
       {{ end }}
     </ul>

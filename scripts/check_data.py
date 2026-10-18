@@ -36,8 +36,14 @@ def bilingual(value, where):
 
 
 def image(path, where):
-    if path and not (STATIC / path).is_file():
-        problems.append(f"{where}: image \"{path}\" not found under static/")
+    if not path:
+        return
+    found = next((base / path for base in (ROOT / "assets", STATIC) if (base / path).is_file()), None)
+    if not found:
+        problems.append(f"{where}: image \"{path}\" not found under assets/ or static/")
+    elif found.stat().st_size > 8 * 1024 * 1024:
+        warnings.append(f"{where}: \"{path}\" is {found.stat().st_size // (1024 * 1024)} MB; "
+                        "it still works, but compressing it first keeps the repository small")
 
 
 site = load("site.json")
@@ -64,6 +70,7 @@ if research:
 
 team = load("team.json")
 if team:
+    image((team.get("pi") or {}).get("photo"), "team.json → pi → photo")
     for group in ("members", "alumni"):
         for i, m in enumerate(team.get(group, [])):
             where = f"team.json → {group}[{i}] ({m.get('name', '?')})"

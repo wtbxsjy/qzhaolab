@@ -100,16 +100,27 @@
 在 `data/team.json` 的 `members` 中增删。毕业后，把该成员移到 `alumni`，并加上去向：
 
 ```json
-{ "name": "Li Kecheng", "name_zh": "李可成", "role": "phd", "photo": "images/team/li-kecheng.jpg" }
+{ "name": "Li Kecheng", "name_zh": "李克成", "role": "phd", "photo": "images/team/li-kecheng.jpg" }
 ```
 
 ```json
-{ "name": "Dr. Ying Yang", "role": "phd", "now": { "en": "Assistant Professor, Chongqing Medical University", "zh": "重庆医科大学 助理教授" } }
+{ "name": "Dr. Yang Ying", "role": "phd", "now": { "en": "Assistant Professor, Chongqing Medical University", "zh": "重庆医科大学 助理教授" } }
 ```
 
 - `role` 可选：`postdoc`（博士后研究员）、`phd`（博士研究生）、`mphil`（哲学硕士研究生）、`visiting`（访问学者）、`uris`（本科生研究助理）、`fyp`（本科毕业设计学生）。
-- `name_zh` 填中文名；不填时中文页面显示英文名。目前所有成员都还没有中文名，请逐个补上。
-- `photo` 填 `static/` 下的路径，照片放进 `static/images/team/`。不填时显示首字母头像。建议照片裁成正方形，宽约 400 像素。
+- 英文名统一写成「姓在前、名在后」，例如 `Dr. Yang Ying`、`Zhan Hongyu`；英文名字（如 Chloe Tse）按本人习惯写。
+- `name_zh` 填中文名；不填时中文页面显示英文名。
+- 成员顺序就是网页上的显示顺序。
+
+#### 成员照片
+
+1. 把照片放进 `assets/images/team/` 文件夹。在 GitHub 网页上：打开这个文件夹，点「Add file → Upload files」。原图直接上传即可。
+2. 在该成员的条目里加上 `"photo": "images/team/文件名.jpg"`。负责人（`pi`）和已毕业成员也可以加。
+
+- 网站会自动裁剪：在组成员裁成正方形、负责人裁成竖版、已毕业成员显示为小头像，并自动对准画面主体。访客下载的是压缩后的版本。
+- 照片里人物最好居中、头肩入画、背景简洁；全组风格统一会更好看。
+- 文件名建议用姓名拼音，只用小写英文字母、数字和连字符，例如 `zhang-yuanliang.jpg`。
+- 不填 `photo` 时显示姓氏首字母头像。路径写错时，发布前的数据检查会报错。
 
 ### 添加论文
 
@@ -191,7 +202,7 @@ content/en, content/zh   页面占位文件（只有标题）；research/_conten
 hugo.toml            语言与导航栏
 i18n/                界面固定文字
 layouts/             页面模板
-assets/              需要自动压缩的图片（新闻配图）
+assets/              需要自动压缩的图片（新闻配图、成员照片）
 static/              样式、脚本、字体、图片
 scripts/             数据检查、论文更新、背景图生成脚本
 .github/workflows/   自动发布、论文更新工作流

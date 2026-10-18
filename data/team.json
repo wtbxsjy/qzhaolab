@@ -9,16 +9,18 @@
     },
     "bio": {
       "en": "Dr. Zhao received her PhD from The University of Hong Kong and her Bachelor of Science from Xi'an Jiaotong University, and completed postdoctoral training at the University of California, San Francisco. She is a member of the American Society for Mass Spectrometry, an editorial board member of *Molecular & Cellular Proteomics* and *Chinese Chemical Letters*, and a Council member (Eastern Region) of the Human Proteome Organization. In 2024 she was named a Rising Star in Proteomics and Metabolomics by the *Journal of Proteome Research*.",
-      "zh": "赵倩博士本科毕业于西安交通大学，博士毕业于香港大学，并在美国加州大学旧金山分校完成博士后训练。 她是美国质谱学会会员，*Molecular & Cellular Proteomics* 与 *Chinese Chemical Letters* 编委， 以及国际人类蛋白质组组织理事会（东部区域）理事。2024 年获 *Journal of Proteome Research* 评选为蛋白质组学与代谢组学领域新星（Rising Star）。"
+      "zh": "赵倩博士本科毕业于西安交通大学，博士毕业于香港大学，并在美国加州大学旧金山分校完成博士后训练。她是美国质谱学会会员，*Molecular & Cellular Proteomics* 与 *Chinese Chemical Letters* 编委，以及国际人类蛋白质组组织理事会（东部区域）理事。2024 年获 *Journal of Proteome Research* 评选为蛋白质组学与代谢组学领域新星（Rising Star）。"
     }
   },
   "members": [
     {
       "name": "Dr. Yang Yang",
+      "name_zh": "杨阳",
       "role": "postdoc"
     },
     {
       "name": "Dr. Li Shuqi",
+      "name_zh": "李书奇",
       "role": "postdoc"
     },
     {
@@ -27,26 +29,37 @@
     },
     {
       "name": "Dr. Zhang Yue",
+      "name_zh": "张月",
+      "role": "postdoc"
+    },
+    {
+      "name": "Dr. Qiao Sitan",
+      "name_zh": "乔斯坦",
       "role": "postdoc"
     },
     {
       "name": "Dr. Wu Shanshan",
+      "name_zh": "吴珊珊",
       "role": "visiting"
     },
     {
       "name": "Li Kecheng",
+      "name_zh": "李克成",
       "role": "phd"
     },
     {
       "name": "Qi Ao",
+      "name_zh": "齐澳",
       "role": "phd"
     },
     {
       "name": "Yang Chenxi",
+      "name_zh": "杨晨曦",
       "role": "phd"
     },
     {
       "name": "Ren Zhe",
+      "name_zh": "任哲",
       "role": "phd"
     },
     {
@@ -55,6 +68,7 @@
     },
     {
       "name": "Zhan Hongyu",
+      "name_zh": "詹红宇",
       "role": "phd"
     },
     {
@@ -68,7 +82,8 @@
   ],
   "alumni": [
     {
-      "name": "Dr. Jin Shang",
+      "name": "Dr. Shang Jin",
+      "name_zh": "尚进",
       "role": "phd",
       "now": {
         "en": "Post-doctoral Fellow, Chinese Academy of Sciences",
@@ -76,7 +91,7 @@
       }
     },
     {
-      "name": "Dr. Lei Chen",
+      "name": "Dr. Chen Lei",
       "role": "postdoc",
       "now": {
         "en": "Research Assistant Professor, The University of Hong Kong",
@@ -84,7 +99,7 @@
       }
     },
     {
-      "name": "Dr. Ying Yang",
+      "name": "Dr. Yang Ying",
       "role": "phd",
       "now": {
         "en": "Assistant Professor, Chongqing Medical University",
