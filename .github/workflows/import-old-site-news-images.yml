@@ -1,0 +1,78 @@
+# One-off: copy news pictures from the old Weebly site into assets/images/news/.
+# Each line: <path under the old site's uploads folder>  <file name to save as>
+# The original-size version ("_orig") is tried first. This file is removed afterwards.
+name: Import old site news images
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download pictures
+        run: |
+          set -u
+          base="https://zhaoqlab.weebly.com/uploads/1/3/4/7/134747280"
+          dest=assets/images/news
+          mkdir -p "$dest"
+          failed=0
+          while read -r src name; do
+            [ -z "$src" ] && continue
+            ext="${src##*.}"
+            orig="${src%.*}_orig.${ext}"
+            case "$src" in *_orig.*) orig="$src" ;; esac
+            out="$dest/$name.$ext"
+            ok=""
+            for url in "$base/$orig" "$base/$src"; do
+              if curl -fsSL --retry 3 -A "Mozilla/5.0" -o "$out" "$url" && file --mime-type -b "$out" | grep -q '^image/'; then
+                ok="$url"; break
+              fi
+              rm -f "$out"
+            done
+            if [ -n "$ok" ]; then echo "ok   $out <- ${ok#$base/} ($(du -h "$out" | cut -f1))"; else echo "FAIL $src"; failed=$((failed+1)); fi
+          done <<'LIST'
+          published/20260604071742-1055-70.jpg       2026-05-29-icover-best-poster
+          published/20251107093749-361-70.jpg        2025-11-06-csi-annual-meeting
+          20251106103532-121-29.jpg                  2025-10-12-aohupo-1
+          20251106103536-124-29.jpg                  2025-10-12-aohupo-2
+          editor/2025-07-12-103528.png               2025-07-01-angewandte-paper
+          20250322100534.jpg                         2025-03-22-hksi-congress
+          250318lsccb-54.jpg                         2025-03-17-lsccb-1
+          250318lsccb-56.jpg                         2025-03-17-lsccb-2
+          published/2025-02-21-102748_1.png          2025-02-04-mcp-paper
+          2025-01-18-083250.png                      2025-01-15-analytical-chemistry-paper
+          logo-hupo-congress-2024.webp               2024-10-20-hupo-congress-logo
+          published/20241024191806.jpg               2024-10-20-hupo-zhao-talk
+          published/20241024191814.jpg               2024-10-20-hupo-shang-jin
+          2024-10-07-094843.png                      2024-09-28-jmc-paper
+          published/18th-cps-2024.jpg                2024-07-01-cps-1
+          editor/zq.jpg                              2024-07-01-cps-2
+          editor/shang-jin-poster-2.jpg              2024-07-01-shang-jin-poster-1
+          editor/1411096905.jpg                      2024-07-01-shang-jin-poster-2
+          published/shang-jin-poster.jpg             2024-05-18-shang-jin-best-poster-1
+          published/best-poster-award.jpg            2024-05-18-shang-jin-best-poster-2
+          published/screenshot-2024-01-10-at-15-24-41.png  2024-01-05-rising-star
+          published/screenshot-2024-01-03-at-14-35-03.png  2023-10-10-nature-communications-paper
+          screenshot-2022-12-12-at-18-39-46.png      2022-12-05-mcp-paper
+          screenshot-2022-03-21-at-15-34-30.png      2022-03-18-acs-chemical-biology-paper
+          published/poster-final-21120405.png        2021-12-04-nsfc-rgc-forum-1
+          editor/img-2263.jpg                        2021-12-04-nsfc-rgc-forum-2
+          editor/img-1917.jpg                        2021-11-13-graduation
+          published/img-1304.jpg                     2021-10-13-cnhupo-1
+          published/img-1305.jpg                     2021-10-13-cnhupo-2
+          editor/casms.png                           2021-08-12-casms-poster
+          LIST
+          echo "$failed failed"
+      - name: Commit
+        run: |
+          git add assets/images/news
+          if git diff --cached --quiet; then echo "Nothing downloaded."; exit 1; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Import news pictures from the old Weebly site"
+          git push
