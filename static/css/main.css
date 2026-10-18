@@ -122,8 +122,27 @@ img { max-width: 100%; display: block; }
 .news-list { list-style: none; margin: 0 0 16px; padding: 0; }
 .news-item { display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .news-item time { flex: 0 0 150px; font-size: 15px; font-weight: 600; color: var(--ink-3); }
-.news-item span { flex: 1 1 400px; min-width: 0; }
-.news-item p { margin: 0; }
+.news-body { flex: 1 1 400px; min-width: 0; }
+.news-body p { margin: 0; }
+.news-images { list-style: none; margin: 12px 0 4px; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.news-thumb { display: block; border-radius: 8px; overflow: hidden; background: var(--surface-2); }
+.news-thumb img { width: 168px; height: 112px; object-fit: cover; display: block; transition: transform 0.2s ease; }
+.news-thumb:hover img, .news-thumb:focus-visible img { transform: scale(1.04); }
+.news-images.compact .news-thumb img { width: 120px; height: 80px; }
+
+/* Picture viewer for news images */
+.lightbox { padding: 0; border: none; background: transparent; max-width: none; max-height: none; overflow: visible; }
+.lightbox::backdrop { background: rgba(10, 16, 28, 0.94); }
+.lightbox figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.lightbox img { max-width: 90vw; max-height: 82vh; display: block; border-radius: 8px; }
+.lightbox figcaption { color: #f3f5f9; font-size: 15px; max-width: 80vw; text-align: center; }
+.lightbox-close, .lightbox-nav { position: fixed; width: 48px; height: 48px; border: none; border-radius: 50%; background: rgba(255, 255, 255, 0.16); color: #fff; font-size: 30px; line-height: 1; cursor: pointer; }
+.lightbox-close:hover, .lightbox-nav:hover { background: rgba(255, 255, 255, 0.3); }
+.lightbox-close { top: 16px; right: 16px; }
+.lightbox-nav { top: 50%; transform: translateY(-50%); }
+.lightbox-nav.prev { left: 16px; }
+.lightbox-nav.next { right: 16px; }
+.lightbox-nav[hidden] { display: none; }
 .news-preview { padding-top: 0; }
 
 /* Team */
@@ -170,6 +189,8 @@ img { max-width: 100%; display: block; }
   .feature-card h2, .feature-card h3 { font-size: 26px; }
   .figure { height: 220px; }
   .contact { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .news-thumb img { width: calc((100vw - 58px) / 2); height: auto; aspect-ratio: 3 / 2; }
+  .news-images.compact .news-thumb img { width: 120px; height: 80px; }
   .contact dd { margin-bottom: 12px; }
   .hero { min-height: auto; background-image: linear-gradient(rgba(12,24,38,0.80), rgba(12,24,38,0.80)), var(--hero-image, none); }
   .hero-inner { padding-top: 32px; }

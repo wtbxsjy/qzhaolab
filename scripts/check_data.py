@@ -16,6 +16,7 @@ DATA = ROOT / "data"
 STATIC = ROOT / "static"
 ROLES = {"postdoc", "phd", "mphil", "visiting", "uris", "fyp"}
 problems = []
+warnings = []
 
 
 def load(name):
@@ -105,9 +106,26 @@ if news is not None:
             problems.append(f"{where}: \"date\" must look like 2026-10-05")
         if not str(n.get("en", "")).strip():
             problems.append(f"{where}: \"en\" text is required")
+        images = n.get("images", [])
+        if not isinstance(images, list):
+            problems.append(f"{where}: \"images\" must be a list, e.g. [\"images/news/2026-10-05-welcome.jpg\"]")
+            continue
+        for j, im in enumerate(images):
+            src = im.get("src") if isinstance(im, dict) else im
+            if not isinstance(src, str) or not src.strip():
+                problems.append(f"{where} → images[{j}]: needs a path, either as a string or as \"src\"")
+                continue
+            found = next((base / src for base in (ROOT / "assets", STATIC) if (base / src).is_file()), None)
+            if not found:
+                problems.append(f"{where} → images[{j}]: \"{src}\" not found under assets/ or static/")
+            elif found.stat().st_size > 8 * 1024 * 1024:
+                warnings.append(f"{where} → images[{j}]: \"{src}\" is {found.stat().st_size // (1024 * 1024)} MB; "
+                                "it still works, but compressing it first keeps the repository small")
 
 load("join.json")
 
+for w in warnings:
+    print("Note: " + w)
 if problems:
     print("Problems found in data/:")
     for p in problems:

@@ -33,7 +33,7 @@
   <p class="eyebrow">{{ i18n "latestNews" }}</p>
   <ul class="news-list">
     {{ range first ($s.homeNewsCount | default 3) (sort site.Data.news "date" "desc") }}
-      {{ partial "news-item.html" . }}
+      {{ partial "news-item.html" (dict "item" . "compact" true) }}
     {{ end }}
   </ul>
   {{ with site.GetPage "/news" }}<a class="more" href="{{ .RelPermalink }}">{{ i18n "allNews" }} →</a>{{ end }}

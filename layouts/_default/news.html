@@ -5,7 +5,7 @@
   </header>
   <ul class="news-list">
     {{ range sort site.Data.news "date" "desc" }}
-      {{ partial "news-item.html" . }}
+      {{ partial "news-item.html" (dict "item" . "compact" false) }}
     {{ end }}
   </ul>
 </article>

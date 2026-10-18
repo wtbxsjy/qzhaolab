@@ -1,5 +1,40 @@
-{{/* One news entry. Context: a map from data/news.json. */}}
-<li class="news-item">
-  <time datetime="{{ .date }}">{{ (time .date) | time.Format ":date_medium" }}</time>
-  <span>{{ partial "l.html" (dict "en" .en "zh" .zh) | markdownify }}</span>
+{{/* One news entry.
+     Context: dict "item" (a map from data/news.json) and "compact" (true on the home page: at most one small picture).
+     An entry may carry "images": a list of either a path string or {"src", "alt", "caption"}.
+     Paths are looked up under assets/ first (resized automatically) and then under static/ (used as they are). */}}
+{{ $item := .item }}
+{{ $images := $item.images | default slice }}
+{{ if .compact }}{{ $images = first 1 $images }}{{ end }}
+<li class="news-item{{ if $images }} has-images{{ end }}">
+  <time datetime="{{ $item.date }}">{{ (time $item.date) | time.Format ":date_medium" }}</time>
+  <div class="news-body">
+    <p>{{ partial "l.html" (dict "en" $item.en "zh" $item.zh) | markdownify }}</p>
+    {{ with $images }}
+    <ul class="news-images{{ if $.compact }} compact{{ end }}">
+      {{ range . }}
+        {{ $src := "" }}{{ $alt := "" }}{{ $caption := "" }}
+        {{ if reflect.IsMap . }}
+          {{ $src = .src }}
+          {{ with .alt }}{{ $alt = partial "l.html" . }}{{ end }}
+          {{ with .caption }}{{ $caption = partial "l.html" . }}{{ end }}
+        {{ else }}
+          {{ $src = . }}
+        {{ end }}
+        {{ $alt = $alt | default $caption | default (partial "l.html" (dict "en" $item.en "zh" $item.zh) | plainify) }}
+        {{ $thumbURL := "" }}{{ $largeURL := "" }}
+        {{ with resources.Get $src }}
+          {{ $thumbURL = (.Fill "480x320 webp q78 Center").RelPermalink }}
+          {{ $largeURL = (.Fit "1600x1600 webp q82").RelPermalink }}
+        {{ else }}
+          {{ $thumbURL = $src | relURL }}{{ $largeURL = $thumbURL }}
+        {{ end }}
+        <li>
+          <a class="news-thumb" href="{{ $largeURL }}" data-caption="{{ $caption }}">
+            <img src="{{ $thumbURL }}" alt="{{ $alt }}" loading="lazy" width="480" height="320">
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
 </li>

@@ -9,6 +9,15 @@
   <main id="main">
     {{ block "main" . }}{{ end }}
   </main>
+  <dialog class="lightbox" id="lightbox" aria-label="{{ i18n "imageViewer" }}">
+    <button class="lightbox-close" type="button" aria-label="{{ i18n "close" }}">×</button>
+    <button class="lightbox-nav prev" type="button" aria-label="{{ i18n "previous" }}">‹</button>
+    <button class="lightbox-nav next" type="button" aria-label="{{ i18n "next" }}">›</button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
   {{ partial "footer.html" . }}
 </body>
 </html>

@@ -68,6 +68,33 @@
 },
 ```
 
+#### 给新闻配图
+
+1. 把图片放进 `assets/images/news/` 文件夹。在 GitHub 网页上：打开这个文件夹，点「Add file → Upload files」。原图直接上传即可，包括手机照片。网站会自动生成缩略图和适合网页显示的大图，访客下载的是压缩后的版本。
+2. 在对应新闻里加上 `images`：
+
+```json
+{
+  "date": "2026-09-27",
+  "en": "PhD candidate Ms YANG Chenxi wins the HUPO Travel Award! Congratulations!",
+  "zh": "博士研究生杨晨曦荣获 HUPO 旅行奖！祝贺！",
+  "images": [
+    "images/news/2026-09-27-hupo-award.jpg",
+    {
+      "src": "images/news/2026-09-27-poster.jpg",
+      "caption": { "en": "Chenxi presenting her poster", "zh": "杨晨曦介绍壁报" }
+    }
+  ]
+}
+```
+
+- 每张图可以只写路径，也可以写成带 `src`、`caption`（图注）、`alt`（图片描述，供读屏软件[^alt]使用）的形式。不写 `alt` 时，会依次用图注或新闻正文代替。
+- 新闻页显示全部配图，点击放大，可用方向键或两侧按钮切换同一条新闻的图片；首页只显示每条新闻的第一张小图。
+- 文件名建议以日期开头，只用小写英文字母、数字和连字符。图片路径写错时，发布前的数据检查会报错。
+- 图片也可以放在 `static/` 下，但那样不会自动压缩，原图多大访客就下载多大，所以新闻图片请放在 `assets/images/news/`。
+
+[^alt]: 读屏软件：视障用户用来朗读网页内容的辅助工具；图片描述也会在图片加载失败时显示。
+
 ### 成员加入或毕业
 
 在 `data/team.json` 的 `members` 中增删。毕业后，把该成员移到 `alumni`，并加上去向：
@@ -164,7 +191,8 @@ content/en, content/zh   页面占位文件（只有标题）；research/_conten
 hugo.toml            语言与导航栏
 i18n/                界面固定文字
 layouts/             页面模板
-static/              样式、字体、图片
+assets/              需要自动压缩的图片（新闻配图）
+static/              样式、脚本、字体、图片
 scripts/             数据检查、论文更新、背景图生成脚本
 .github/workflows/   自动发布、论文更新工作流
 ```
