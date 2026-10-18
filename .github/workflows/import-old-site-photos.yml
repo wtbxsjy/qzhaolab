@@ -1,0 +1,48 @@
+# One-off: copy photos from the old Weebly site into the repository.
+# Run from the Actions tab ("Import old site photos" → "Run workflow"); this file is removed afterwards.
+name: Import old site photos
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download photos
+        run: |
+          set -u
+          base="https://zhaoqlab.weebly.com/uploads/1/3/4/7/134747280"
+          mkdir -p assets/images/team assets/images/old-site
+          fetch() {  # url, destination
+            if curl -fsSL --retry 3 -A "Mozilla/5.0" -o "$2" "$1" && file --mime-type -b "$2" | grep -q '^image/'; then
+              echo "ok   $2 ($(du -h "$2" | cut -f1))"
+            else
+              echo "FAIL $1"; rm -f "$2"
+            fi
+          }
+          # Named portraits
+          fetch "$base/img-0572_orig.jpg"                                       assets/images/team/zhao-qian.jpg
+          fetch "$base/published/yang-ying.jpg"                                 assets/images/team/yang-ying.jpg
+          fetch "$base/published/tse-yin-suen-chloe_1.jpg"                      assets/images/team/tse-chloe.jpg
+          fetch "$base/editor/764540aa-57bb-4052-9b56-7da1c2154ea2_3.jpg"       assets/images/team/wan-annie.jpg
+          fetch "$base/published/blue-wang.jpg"                                 assets/images/team/wang-blue.jpg
+          fetch "$base/published/05597f98-09cf-4999-a192-0eae02c8f9c0_2.jpg"    assets/images/team/wong-winnky.jpg
+          # Unlabelled images on the team page, kept aside for review
+          fetch "$base/published/zty.jpeg"                                      assets/images/old-site/team-page-preview.jpg
+          fetch "$base/240909_orig.jpg"                                         assets/images/old-site/team-gallery-240909.jpg
+          fetch "$base/img-6733_orig.jpg"                                       assets/images/old-site/team-gallery-6733.jpg
+          fetch "$base/img-6735_orig.jpg"                                       assets/images/old-site/team-gallery-6735.jpg
+          fetch "$base/img-6737_orig.jpg"                                       assets/images/old-site/team-gallery-6737.jpg
+      - name: Commit
+        run: |
+          git add assets/images
+          if git diff --cached --quiet; then echo "Nothing downloaded."; exit 1; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Import photos from the old Weebly site"
+          git push
