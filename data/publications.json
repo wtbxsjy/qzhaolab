@@ -593,11 +593,13 @@
     "year": 2021,
     "volume": "49(11)",
     "pages": "6165–6180",
-    "equal": [
-      "Wang H",
-      "Zhao Q"
-    ],
-    "doi": "10.1093/nar/gkab482"
+    "doi": "10.1093/nar/gkab482",
+    "equalPositions": [
+      1,
+      2,
+      3,
+      4
+    ]
   },
   {
     "title": "EPHB2 Activates β-Catenin to Enhance Cancer Stem Cell Properties and Drive Sorafenib Resistance in Hepatocellular Carcinoma",
