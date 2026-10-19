@@ -516,7 +516,8 @@
     "pages": "445–451",
     "corresponding": [
       "Zhao Q"
-    ]
+    ],
+    "doi": "10.1515/hsz-2021-0189"
   },
   {
     "title": "The Small Open Reading Frame-Encoded Peptides: Advances in Methodologies and Functional Studies",
@@ -576,11 +577,11 @@
     "year": 2021,
     "volume": "49(11)",
     "pages": "6165–6180",
-    "url": "https://academic.oup.com/nar/article/49/11/6165/6295532",
     "equal": [
       "Wang HW",
       "Zhao Q"
-    ]
+    ],
+    "doi": "10.1093/nar/gkab482"
   },
   {
     "title": "EPHB2 activates β-catenin to enhance cancer stem cell properties and drive sorafenib resistance…",
@@ -592,7 +593,7 @@
     "year": 2021,
     "volume": "81(12)",
     "pages": "3229–3240",
-    "url": "https://cancerres.aacrjournals.org/content/81/12/3229"
+    "doi": "10.1158/0008-5472.CAN-21-0184"
   },
   {
     "title": "High-pH reversed-phase fractionated neural retina proteome of normal growing C57BL/6 mouse",
@@ -644,7 +645,7 @@
     "year": 2018,
     "volume": "359(6382)",
     "pages": "1416–1421",
-    "url": "https://science.sciencemag.org/content/359/6382/1416"
+    "doi": "10.1126/science.aan1053"
   },
   {
     "title": "Revealing nascent proteomics in signaling pathways and cell differentiation",
@@ -656,11 +657,11 @@
     "year": 2018,
     "volume": "115(10)",
     "pages": "2353–2358",
-    "url": "https://www.pnas.org/content/115/10/2353",
     "equal": [
       "Forester CM",
       "Zhao Q"
-    ]
+    ],
+    "doi": "10.1073/pnas.1707514115"
   },
   {
     "title": "Broad-spectrum kinase profiling in live cells with lysine-targeted sulfonyl fluoride probes",
