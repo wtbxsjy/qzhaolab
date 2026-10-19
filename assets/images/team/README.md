@@ -1,5 +1,7 @@
 # 成员照片
 
+完整说明见 [docs/MAINTENANCE.md](../../../docs/MAINTENANCE.md#更新成员)。
+
 把成员照片放在这个文件夹，然后在 `data/team.json` 中该成员的 `photo` 里写上路径，例如 `images/team/yang-chenxi.jpg`。
 
 - 原图直接放即可，网站会自动裁成正方形（负责人照片裁成竖版），并自动对准画面主体。

@@ -1,5 +1,7 @@
 # 新闻图片
 
+完整说明见 [docs/MAINTENANCE.md](../../../docs/MAINTENANCE.md#给新闻配图)。
+
 把新闻配图放在这个文件夹，然后在 `data/news.json` 对应新闻的 `images` 里写上路径，例如 `images/news/2026-09-27-hupo-award.jpg`。
 
 - 原图直接放即可（手机照片也行），网站会自动生成缩略图和适合网页的大图，访客看到的不是原图。
