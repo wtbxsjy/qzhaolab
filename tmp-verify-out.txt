@@ -1,0 +1,82 @@
+=== 10.1515/hsz-2021-0189
+TITLE: Two-photon fluorescent turn-on probes for highly efficient detection and profiling of thiols in live cells and tissues
+JOURNAL: ['Biological Chemistry'] VOL 403 ISSUE 4 PAGE 445-451
+ISSUED: {'date-parts': [[2021, 9, 9]]} ONLINE: {'date-parts': [[2021, 9, 9]]} PRINT: {'date-parts': [[2022, 3, 28]]}
+1 Congzhen Shen first School of Pharmacy, Jinan University , 601 Huangpu Avenue West , Guangzhou 51063
+2 Duoteng Zhang additional Key Laboratory of Flexible Electronics (KLOFE), Jiangsu National Synergetic Inno
+3 Fang Xu additional School of Pharmacy, Jinan University , 601 Huangpu Avenue West , Guangzhou 51063
+4 Yang Yang additional Department of Applied Biology and Chemical Technology , State Key Laboratory of 
+5 Yi Tan additional School of Pharmacy, Jinan University , 601 Huangpu Avenue West , Guangzhou 51063
+6 Qian Zhao additional Department of Applied Biology and Chemical Technology , State Key Laboratory of 
+7 Lin Li additional Key Laboratory of Flexible Electronics (KLOFE), Jiangsu National Synergetic Inno
+8 Ke Ding additional School of Pharmacy, Jinan University , 601 Huangpu Avenue West , Guangzhou 51063
+9 Zhengqiu Li additional School of Pharmacy, Jinan University , 601 Huangpu Avenue West , Guangzhou 51063
+=== 10.1093/nar/gkab482
+TITLE: Tissue- and stage-specific landscape of the mouse translatome
+JOURNAL: ['Nucleic Acids Research'] VOL 49 ISSUE 11 PAGE 6165-6180
+ISSUED: {'date-parts': [[2021, 6, 9]]} ONLINE: {'date-parts': [[2021, 6, 9]]} PRINT: {'date-parts': [[2021, 6, 21]]}
+1 Hongwei Wang first State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+2 Yan Wang additional State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+3 Jiaqi Yang additional State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+4 Qian Zhao additional State Key Laboratory of Chemical Biology and Drug Discovery, Department of Appli
+5 Nan Tang additional State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+6 Congying Chen additional State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+7 Huihui Li additional State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+8 Chichi Cheng additional State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+9 Mingzhe Xie additional State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+10 Yang Yang additional State Key Laboratory of Chemical Biology and Drug Discovery, Department of Appli
+11 Zhi Xie additional State Key Laboratory of Ophthalmology, Zhongshan Ophthalmic Center, Sun Yat-sen 
+=== 10.1158/0008-5472.CAN-21-0184
+TITLE: EPHB2 Activates β-Catenin to Enhance Cancer Stem Cell Properties and Drive Sorafenib Resistance in Hepatocellular Carcinoma
+JOURNAL: ['Cancer Research'] VOL 81 ISSUE 12 PAGE 3229-3240
+ISSUED: {'date-parts': [[2021, 4, 26]]} ONLINE: {'date-parts': [[2021, 4, 26]]} PRINT: {'date-parts': [[2021, 6, 15]]}
+1 Hoi Wing Leung first 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+2 Carmen Oi Ning Leung additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+3 Eunice Y. Lau additional 2Department of Clinical Oncology, Queen Elizabeth Hospital, Hong Kong, P.R. Chin
+4 Katherine Po Sin Chung additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+5 Etienne H. Mok additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+6 Martina Mang Leng Lei additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+7 Rainbow Wing Hei Leung additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+8 Man Tong additional 3School of Biomedical Sciences, Li Ka Shing Faculty of Medicine, The University 
+9 Vincent W. Keng additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+10 Cong Ma additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+11 Qian Zhao additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+12 Irene Oi Lin Ng additional 4Department of Pathology, Queen Mary Hospital, The University of Hong Kong, Hong
+13 Stephanie Ma additional 3School of Biomedical Sciences, Li Ka Shing Faculty of Medicine, The University 
+14 Terence K. Lee additional 1Department of Applied Biology and Chemical Technology, The Hong Kong Polytechni
+=== 10.1126/science.aan1053
+TITLE: Locally translated mTOR controls axonal local translation in nerve injury
+JOURNAL: ['Science'] VOL 359 ISSUE 6382 PAGE 1416-1421
+ISSUED: {'date-parts': [[2018, 3, 23]]} ONLINE: None PRINT: {'date-parts': [[2018, 3, 23]]}
+1 Marco Terenzio first Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+2 Sandip Koley additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+3 Nitzan Samra additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+4 Ida Rishal additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+5 Qian Zhao additional Department of Pharmaceutical Chemistry, University of California, San Francisco,
+6 Pabitra K. Sahoo additional Department of Biological Sciences, University of South Carolina, Columbia, SC 29
+7 Anatoly Urisman additional Department of Pharmaceutical Chemistry, University of California, San Francisco,
+8 Letizia Marvaldi additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+9 Juan A. Oses-Prieto additional Department of Pharmaceutical Chemistry, University of California, San Francisco,
+10 Craig Forester additional Division of Pediatric Allergy, Immunology and Bone Marrow Transplantation, Unive
+11 Cynthia Gomes additional Department of Biological Sciences, University of South Carolina, Columbia, SC 29
+12 Ashley L. Kalinski additional Department of Biological Sciences, University of South Carolina, Columbia, SC 29
+13 Agostina Di Pizio additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+14 Ella Doron-Mandel additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+15 Rotem Ben-Tov Perry additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+16 Indrek Koppel additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+17 Jeffery L. Twiss additional Department of Biological Sciences, University of South Carolina, Columbia, SC 29
+18 Alma L. Burlingame additional Department of Pharmaceutical Chemistry, University of California, San Francisco,
+19 Mike Fainzilber additional Department of Biomolecular Sciences, Weizmann Institute of Science, Rehovot 7610
+=== 10.1073/pnas.1707514115
+TITLE: Revealing nascent proteomics in signaling pathways and cell differentiation
+JOURNAL: ['Proceedings of the National Academy of Sciences'] VOL 115 ISSUE 10 PAGE 2353-2358
+ISSUED: {'date-parts': [[2018, 2, 21]]} ONLINE: {'date-parts': [[2018, 2, 21]]} PRINT: {'date-parts': [[2018, 3, 6]]}
+1 Craig M. Forester first Division of Pediatric Allergy, Immunology &amp; Bone Marrow Transplantation, Uni
+2 Qian Zhao additional Department of Pharmaceutical Chemistry, University of California, San Francisco,
+3 Nancy J. Phillips additional Department of Pharmaceutical Chemistry, University of California, San Francisco,
+4 Anatoly Urisman additional Department of Pathology, University of California, San Francisco, CA 94143;
+5 Robert J. Chalkley additional Department of Pharmaceutical Chemistry, University of California, San Francisco,
+6 Juan A. Oses-Prieto additional Department of Pharmaceutical Chemistry, University of California, San Francisco,
+7 Li Zhang additional Helen Diller Family Comprehensive Cancer Center, University of California, San F
+8 Davide Ruggero additional Helen Diller Family Comprehensive Cancer Center, University of California, San F
+9 Alma L. Burlingame additional Helen Diller Family Comprehensive Cancer Center, University of California, San F
