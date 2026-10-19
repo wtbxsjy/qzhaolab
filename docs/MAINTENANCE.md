@@ -291,7 +291,7 @@ hugo server                     # 启动预览
 
 ## 待完善事项
 
-- **5 篇论文缺 DOI**：从旧网站迁移时，以下论文没有 DOI，作者只有第一作者，需要手动补全作者和 DOI：*Biological Chemistry* 2021、*Nucleic Acids Research* 2021（小鼠翻译组）、*Cancer Research* 2021、*Science* 2018、*Proceedings of the National Academy of Sciences* 2018。其中 *Cancer Research* 2021 的标题在迁移时被截断，也需要补全。补上 DOI 后运行一次「Update publications」即可。
+- **论文的共同第一作者、通讯作者标记待确认**：5 篇原先缺 DOI 的论文已按 Crossref 补全 DOI 和作者。其中 *Biological Chemistry* 2022 目前标了赵倩为通讯作者，但她排在第 6 位，请对照论文原文确认；*Nucleic Acids Research* 2021 和 *Proceedings of the National Academy of Sciences* 2018 的共同贡献作者标记来自旧网站，也请对照原文确认。
 - **研究方向配图**：目前两张是从首页背景插画裁出的临时图，建议换成课题组的科研示意图。
 - **旧照片清晰度**：从旧网站搬来的新闻配图大多分辨率较低，如有原图可按原文件名替换。
 - **相册图注**：组内生活相册的 24 张照片暂无图注，可按需补充。
