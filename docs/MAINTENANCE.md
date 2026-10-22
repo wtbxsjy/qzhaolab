@@ -65,7 +65,7 @@
 | `data/publications.json` | 论文列表 |
 | `data/news.json` | 新闻动态 |
 | `data/gallery.json` | 团队成员页底部的「组内生活」相册 |
-| `data/join.json` | 招聘信息：申请方式、岗位、要求、经费来源 |
+| `data/join.json` | 招聘信息：岗位、要求、申请方式、平台、经费来源 |
 
 一般不需要改的文件：
 
@@ -229,7 +229,7 @@ DOI[^doi] 是每篇论文的唯一编号。打开仓库的 **Actions** 页面，
 
 - **课题组名称、标语、首页研究概述、系名、地址、邮箱**：都在 `data/site.json`。
 - **首页背景图**：`site.json` 的 `heroImage`。把新图片放进 `static/images/`，再改这个路径。建议宽约 2000 像素、文件小于 500 KB。现在的背景图是用 `scripts/make_hero_bg.py` 生成的原创插画，可以换一个随机种子重新生成：`python scripts/make_hero_bg.py hero-bg.svg 11`。生成的是 SVG[^svg] 矢量图，需要再转成 JPG。
-- **招聘信息**：`data/join.json`，包括申请方式（`howToApply`）、各岗位的职责和要求（`positions`）以及经费来源（`funding`）。增删岗位或条目时照现有格式复制修改即可。
+- **招聘信息**：`data/join.json`，包括各岗位（`positions`，每个岗位可有状态标签 `status`、简介 `lead` 和若干分组 `groups`，申请方式写在各岗位的分组里）、培训与平台介绍（`environment`）以及经费来源（`funding`）。岗位招满后，删除该岗位或把 `status` 改成已结束即可。增删岗位或条目时照现有格式复制修改即可。
 
 [^svg]: SVG（Scalable Vector Graphics，可缩放矢量图形）：一种矢量图片格式。
 

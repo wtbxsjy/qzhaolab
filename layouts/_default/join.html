@@ -13,13 +13,21 @@
     {{ end }}
 
     {{ range $j.positions }}
-      <h2>{{ partial "l.html" .title }}</h2>
-      {{ range .groups }}
-        <p><strong>{{ partial "l.html" .heading }}</strong></p>
-        <ul>
-          {{ range .items }}<li>{{ partial "l.html" . | markdownify }}</li>{{ end }}
-        </ul>
-      {{ end }}
+      <section class="position">
+        <h2>{{ partial "l.html" .title }}{{ with .status }} <span class="position-status">{{ partial "l.html" . }}</span>{{ end }}</h2>
+        {{ with .lead }}<p>{{ partial "l.html" . | markdownify }}</p>{{ end }}
+        {{ range .groups }}
+          <p><strong>{{ partial "l.html" .heading }}</strong></p>
+          <ul>
+            {{ range .items }}<li>{{ partial "l.html" . | markdownify }}</li>{{ end }}
+          </ul>
+        {{ end }}
+      </section>
+    {{ end }}
+
+    {{ with $j.environment }}
+      <h2>{{ partial "l.html" .heading }}</h2>
+      {{ partial "l.html" .text | markdownify }}
     {{ end }}
 
     {{ with $j.funding }}

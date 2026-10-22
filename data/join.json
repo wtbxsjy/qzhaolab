@@ -1,42 +1,60 @@
 {
   "intro": {
-    "en": "We welcome motivated people to join the lab. Training in mass spectrometry is provided, so prior experience is not required.",
-    "zh": "欢迎有志于科研的同学和学者加入课题组。课题组提供质谱技术培训，无需相关经验。"
-  },
-  "howToApply": {
-    "heading": {
-      "en": "How to apply",
-      "zh": "申请方式"
-    },
-    "text": {
-      "en": "Email your curriculum vitae, full publication list and a summary of your previous experience to Dr. ZHAO Qian at [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk). Please use the subject line \"Postdoctoral application – Your Name\" or \"Doctoral application – Your Name\".",
-      "zh": "请将个人简历、完整论文列表及过往研究经历发送至赵倩博士邮箱 [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk)。邮件标题请写为「Postdoctoral application – 姓名」或「Doctoral application – 姓名」。"
-    }
+    "en": "We are recruiting for two positions: one Doctoral student starting in September 2027 and one Postdoctoral Fellow in the interdisciplinary area of artificial intelligence and life sciences. Postdoctoral positions are also open on a long-term basis, and the lab is well funded. Training in mass spectrometry and proteomics is provided.",
+    "zh": "课题组现招收 2 个岗位：1 名 2027 年 9 月入学的博士研究生，以及 1 名人工智能与生命科学交叉方向的博士后研究员。博士后岗位也长期开放，课题组经费充足。课题组提供系统的质谱与蛋白质组学培训。"
   },
   "positions": [
     {
       "title": {
-        "en": "Postdoctoral Fellow",
-        "zh": "博士后研究员"
+        "en": "Postdoctoral Fellow: Artificial Intelligence and Life Sciences",
+        "zh": "博士后研究员：人工智能与生命科学交叉方向"
+      },
+      "status": {
+        "en": "Open · 1 position",
+        "zh": "招聘中 · 1 人"
+      },
+      "lead": {
+        "en": "The position focuses on developing artificial intelligence methods and applying them to functional peptides, immunopeptides and cancer immunology. We welcome applicants with a PhD in computer science, artificial intelligence, computational biology, bioinformatics or a related field.",
+        "zh": "岗位聚焦人工智能方法开发，及其在功能性肽、免疫肽和癌症免疫相关研究中的应用。欢迎计算机科学、人工智能、计算生物学、生物信息学等相关专业的博士申请。"
       },
       "groups": [
         {
           "heading": {
-            "en": "Responsibilities",
-            "zh": "工作内容"
+            "en": "Position",
+            "zh": "岗位信息"
           },
           "items": [
             {
-              "en": "Conduct research, analyze results and draft manuscripts.",
-              "zh": "开展科研工作、分析实验结果并撰写论文。"
+              "en": "Employer: Department of Life Sciences, The Hong Kong Polytechnic University. Supervisor: Dr. ZHAO Qian.",
+              "zh": "工作单位：香港理工大学生命科学系；课题组负责人：赵倩副教授。"
             },
             {
-              "en": "Help supervise graduate students and support laboratory management.",
-              "zh": "协助指导研究生，参与实验室管理。"
+              "en": "Salary: competitive and above the average for postdoctoral positions in Hong Kong; qualified candidates can receive up to HK$45,000 per month.",
+              "zh": "薪酬待遇：具有竞争力，超出香港博士后待遇的平均水平，符合条件者月薪最高可达 45,000 港元。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Research and responsibilities",
+            "zh": "研究内容与岗位职责"
+          },
+          "items": [
+            {
+              "en": "**Developing artificial intelligence methods:** develop and apply machine learning and deep learning methods to key questions in functional peptide and microprotein research.",
+              "zh": "**人工智能算法与计算方法开发：** 开发并应用机器学习、深度学习等方法，解决功能性肽与微蛋白研究中的关键科学问题。"
             },
             {
-              "en": "Apply independently for regional, national or international research funding.",
-              "zh": "独立申请地区、国家或国际科研基金。"
+              "en": "**Functional microproteins and immunopeptides:** explore new computational strategies for discovering human functional peptides and understanding their biological mechanisms.",
+              "zh": "**功能性微蛋白与免疫肽研究：** 面向人类功能性肽的发现与功能解析，探索新的计算分析策略。"
+            },
+            {
+              "en": "**Cancer immunotherapy research:** combine computational modelling with multi-omics data (data from several molecular levels, such as the genome, transcriptome and proteome) for innovative research in tumor immunology.",
+              "zh": "**癌症免疫治疗相关研究：** 结合计算建模与多组学数据（来自基因组、转录组、蛋白质组等多个分子层面的数据），开展肿瘤免疫相关的创新研究。"
+            },
+            {
+              "en": "Work closely with experimental biologists and clinical researchers.",
+              "zh": "与实验生物学家及临床研究人员紧密合作。"
             }
           ]
         },
@@ -47,20 +65,60 @@
           },
           "items": [
             {
-              "en": "A PhD, preferably in bioinformatics, or in a related field such as molecular or structural biology, cell biology, physiology, chemical biology, proteomics or pharmacy.",
-              "zh": "已获博士学位，生物信息学方向优先；分子或结构生物学、细胞生物学、生理学、化学生物学、蛋白质组学、药学等相关方向亦可。"
+              "en": "**Education:** a PhD (completed or about to be completed) in computer science, artificial intelligence, computational biology, bioinformatics, applied mathematics or a related field.",
+              "zh": "**学历背景：** 已获得或即将获得计算机科学、人工智能、计算生物学、生物信息学、应用数学或相关专业博士学位。"
             },
             {
-              "en": "At least one first-author paper in a Science Citation Index journal, accepted or in press.",
-              "zh": "至少有一篇已接收或在印的第一作者科学引文索引期刊论文。"
+              "en": "**Programming and algorithms:** proficient in Python, R and Linux; able to design algorithms and build models; experience developing machine learning or deep learning models.",
+              "zh": "**编程与算法能力：** 熟练掌握 Python、R、Linux 等编程与计算环境，具备算法设计和建模能力，有机器学习或深度学习模型开发经验。"
             },
             {
-              "en": "Fluent written and spoken English.",
-              "zh": "英语书面与口语表达流利。"
+              "en": "**Applied experience:** has applied artificial intelligence to real research problems and can independently design and develop tools or computational methods for life science questions.",
+              "zh": "**人工智能实践经验：** 有将人工智能方法应用于实际科研问题的经历，能够独立设计、开发工具或计算方法解决生命科学问题。"
             },
             {
-              "en": "Initiative and enthusiasm for research.",
-              "zh": "积极主动，对科研充满热情。"
+              "en": "**Research record and collaboration:** first-author papers in high-quality journals; able to run research projects independently and to communicate effectively with experimental biologists and clinicians.",
+              "zh": "**科研素养与合作能力：** 以第一作者发表过高水平学术论文，具备独立开展科研项目的能力，能够与实验生物学家及临床医生有效沟通，推动计算分析与实验研究相结合。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "An advantage",
+            "zh": "加分项"
+          },
+          "items": [
+            {
+              "en": "Experience analyzing mass spectrometry-based proteomics data.",
+              "zh": "具有基于质谱的蛋白质组学数据分析经验。"
+            },
+            {
+              "en": "Familiarity with multi-omics data integration and cross-analysis workflows.",
+              "zh": "熟悉多组学数据整合与交叉分析流程。"
+            },
+            {
+              "en": "Education in medicine, biology or another life science, or solid knowledge of these fields.",
+              "zh": "具有医学、生物学或相关生命科学教育背景，或具备扎实的相关知识。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "How to apply",
+            "zh": "申请方式"
+          },
+          "items": [
+            {
+              "en": "Email your curriculum vitae and a cover letter stating your earliest available start date to [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk).",
+              "zh": "请将个人简历和申请信（注明最早可到岗时间）发送至 [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk)。"
+            },
+            {
+              "en": "Subject line: \"Postdoctoral application – Name – Field – Institution of your PhD\".",
+              "zh": "邮件主题：「博士后申请-姓名-专业方向-博士毕业院校」。"
+            },
+            {
+              "en": "The lab will evaluate the applications and contact suitable candidates.",
+              "zh": "课题组将根据申请材料进行评估，并与合适的候选人进一步沟通。"
             }
           ]
         }
@@ -68,47 +126,132 @@
     },
     {
       "title": {
-        "en": "PhD Student",
-        "zh": "博士研究生"
+        "en": "PhD Student, September 2027 intake",
+        "zh": "博士研究生（2027 年 9 月入学）"
+      },
+      "status": {
+        "en": "Open · 1 position",
+        "zh": "招聘中 · 1 人"
+      },
+      "lead": {
+        "en": "Direction: life sciences and bioinformatics.",
+        "zh": "研究方向：生命科学与生物信息。"
       },
       "groups": [
         {
           "heading": {
-            "en": "Requirements",
-            "zh": "申请条件"
+            "en": "Research directions",
+            "zh": "研究方向"
           },
           "items": [
             {
-              "en": "A bachelor's or master's degree in molecular biology, structural biology, cell biology or bioinformatics; bioinformatics is preferred.",
-              "zh": "具有分子生物学、结构生物学、细胞生物学或生物信息学学士或硕士学位，生物信息学背景优先。"
+              "en": "Systematically discover and characterize new natural peptides, including functional microproteins inside human cells, with a focus on peptides encoded by small open reading frames (short stretches of the genome that can be translated into proteins).",
+              "zh": "系统地发现和表征新的天然肽，包括人源胞内功能微肽（functional microprotein），重点关注由小开放阅读框（sORF，基因组中较短、可被翻译成蛋白质的序列）编码的肽。"
             },
             {
-              "en": "Enthusiasm for research, self-motivation and a strong sense of responsibility.",
-              "zh": "热爱科研，有自驱力和责任心。"
+              "en": "Develop next-generation mass spectrometry, bioinformatics and artificial intelligence technologies around immunopeptidomics (the study of peptides presented on the cell surface to the immune system) and tumor neoantigens (new targets produced by tumor mutations), to clarify biological mechanisms and speed up new tumor immunotherapies such as cancer vaccines and T cell receptor engineered T cell therapy.",
+              "zh": "围绕免疫肽组学（immunopeptidomics，研究呈递在细胞表面、供免疫系统识别的肽）和肿瘤新抗原（tumor neoantigens，肿瘤突变产生的新靶点），开发下一代质谱、生物信息和人工智能技术，阐明生物学机制并加速新型肿瘤免疫疗法的开发，例如肿瘤疫苗、T 细胞受体工程化 T 细胞（TCR-T）治疗等。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Basic requirements",
+            "zh": "基本条件"
+          },
+          "items": [
+            {
+              "en": "Research training in one or more of: oncology, biochemistry, bioinformatics, cell biology, mass spectrometry or proteomics, with published or forthcoming papers.",
+              "zh": "在肿瘤医学、生物化学、生物信息学、细胞生物学、质谱或蛋白质组学等任一或相关领域接受过科研训练，有已发表或待发表的论文。"
             },
             {
-              "en": "Overseas applicants may need to submit International English Language Testing System or Test of English as a Foreign Language scores.",
-              "zh": "海外申请者可能需要提交雅思（International English Language Testing System）或托福（Test of English as a Foreign Language）成绩。"
+              "en": "Critical thinking in research, and a strong wish and interest to do science.",
+              "zh": "具备科研思辨能力，有强烈意愿和兴趣做科学研究。"
+            },
+            {
+              "en": "Two or more recommendation letters from experts in Hong Kong, mainland China or overseas.",
+              "zh": "提供两位或以上海内外专家推荐信。"
+            },
+            {
+              "en": "International English Language Testing System score of 6.5 or Test of English as a Foreign Language score of 80, or a transcript to be provided soon. Applicants with overseas degrees do not need to provide English scores.",
+              "zh": "雅思（International English Language Testing System）6.5 分或托福（Test of English as a Foreign Language）80 分成绩，或即将提供成绩单；海外学历无需提供英文成绩。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "An advantage (any one)",
+            "zh": "加分项（符合任一即可）"
+          },
+          "items": [
+            {
+              "en": "A bachelor's or master's degree from a leading university in China or abroad, with a high Grade Point Average.",
+              "zh": "本科或硕士毕业于海内外顶尖院校，成绩绩点（Grade Point Average）较高。"
+            },
+            {
+              "en": "A background in proteomics, artificial intelligence or immunology; major awards such as a national scholarship are preferred.",
+              "zh": "蛋白质组学、人工智能、免疫学专业优先；获得国家奖学金等重大奖项者优先。"
+            },
+            {
+              "en": "Familiarity with Linux, and experience or training in genomics, ribosome profiling sequencing (Ribo-seq) or artificial intelligence for science.",
+              "zh": "熟悉 Linux 系统使用，具有基因组学、核糖体印迹测序（Ribo-seq）或人工智能赋能科学研究（AI for Science）相关的经验或科研训练。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Working conditions",
+            "zh": "工作条件"
+          },
+          "items": [
+            {
+              "en": "The Hong Kong Polytechnic University is ranked 50th in the 2027 Quacquarelli Symonds World University Rankings, and its position keeps rising.",
+              "zh": "香港理工大学在 2027 年 QS（Quacquarelli Symonds）世界大学排名中位列第 50，并逐年上升。"
+            },
+            {
+              "en": "PhD students receive a full scholarship of more than HK$19,000 per month, plus hostel support, so that they can concentrate on study and research.",
+              "zh": "博士生可获每月 19,000 港元以上的全额研究生奖学金，并有宿舍支持，便于全身心投入学习与研究。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "How to apply",
+            "zh": "申请方式"
+          },
+          "items": [
+            {
+              "en": "Email your cover letter and curriculum vitae to Dr. Zhao at [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk).",
+              "zh": "请将申请信和简历发送至赵老师邮箱 [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk)。"
+            },
+            {
+              "en": "Subject line: \"2027 PhD application – Name – Highest degree\".",
+              "zh": "邮件主题：「2027年PhD申请-姓名-学历」。"
             }
           ]
         }
       ]
     }
   ],
+  "environment": {
+    "heading": {
+      "en": "Training and research platform",
+      "zh": "培训与科研平台"
+    },
+    "text": {
+      "en": "The Hong Kong Polytechnic University has an advanced mass spectrometry platform, including several liquid chromatography–mass spectrometry systems (Thermo Scientific Orbitrap Exploris with high-field asymmetric waveform ion mobility spectrometry, Bruker timsTOF Pro and Thermo Scientific Orbitrap Fusion Lumos) and complete biology laboratory facilities. The lab also has third-generation sequencing, high-resolution mass spectrometry, single-cell and spatial transcriptomics data resources to support computational method development and multi-omics integration.\n\nDr. Zhao has worked on protein mass spectrometry for many years. She is an editorial board member of *Molecular & Cellular Proteomics*, a council member of the Human Proteome Organization and Deputy Secretary-General of the Chinese Human Proteome Organization. The lab provides systematic training in mass spectrometry and proteomics.",
+      "zh": "香港理工大学拥有先进的质谱平台，包括多台液相色谱-质谱联用仪（Thermo Scientific Orbitrap Exploris with 高场非对称波形离子迁移谱、Bruker timsTOF Pro、Thermo Scientific Orbitrap Fusion Lumos 等），以及完备的生物学实验平台。课题组还拥有第三代测序、高分辨率质谱、单细胞及空间转录组学等数据资源，可为计算方法开发和多组学数据整合提供支持。\n\n赵倩老师多年专注于蛋白质质谱研究，担任 *Molecular & Cellular Proteomics* 编委、人类蛋白质组组织（Human Proteome Organization）理事会成员、中国人类蛋白质组组织（CNHUPO）副秘书长。课题组将在质谱和蛋白质组学方面提供系统全面的培训。"
+    }
+  },
   "funding": {
     "heading": {
       "en": "Funding",
       "zh": "科研经费"
     },
     "text": {
-      "en": "Our projects are supported by the Research Grants Council of Hong Kong, the Health and Medical Research Fund, the Innovation and Technology Fund, and the National Natural Science Foundation of China.",
-      "zh": "课题组项目获香港研究资助局、医疗卫生研究基金、创新及科技基金以及国家自然科学基金资助。"
+      "en": "The lab is well funded. Our projects are supported by the Research Grants Council of Hong Kong, the Health and Medical Research Fund, the Innovation and Technology Fund, and the National Natural Science Foundation of China.",
+      "zh": "课题组经费充足，项目获香港研究资助局、医疗卫生研究基金、创新及科技基金以及国家自然科学基金资助。"
     }
   },
-  "notes": [
-    {
-      "en": "",
-      "zh": "科学引文索引（Science Citation Index）：收录自然科学领域核心期刊的引文数据库，常用来衡量期刊论文的学术认可度。"
-    }
-  ]
+  "notes": []
 }
