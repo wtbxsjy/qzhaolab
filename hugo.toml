@@ -1,4 +1,4 @@
-baseURL = "https://wtbxsjy.github.io/qzhaolab/"
+baseURL = "https://qzhaolab.com/"
 # 网站内容（课题组名称、简介、地址、成员、论文、新闻等）都在 data/*.json 中维护。
 # 这里只保存网站结构：语言与导航栏。
 title = "The QZhao Lab"
