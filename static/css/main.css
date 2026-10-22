@@ -212,3 +212,10 @@ img { max-width: 100%; display: block; }
   .hero-inner { padding-top: 32px; }
   .home .site-header { position: static; background: #14283a; }
 }
+
+/* Portrait outline: photos with a plain white background would otherwise melt into the page. */
+.avatar, .pi-photo, .alumni-photo {
+  border: 2px solid color-mix(in srgb, var(--ink) 22%, transparent);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--ink) 14%, transparent);
+  box-sizing: border-box;
+}
