@@ -1,8 +1,55 @@
 [
   {
+    "date": "2026-11-07",
+    "en": "Dr. ZHAO Qian presents the lab's work on illuminating the dark microproteome with proteogenomics at the 9th World Chinese Mass Spectrometry Conference (WCMSC 2026, Hong Kong, 6–8 November 2026).",
+    "zh": "赵倩老师在第九届世界华人质谱大会（WCMSC 2026，2026 年 11 月 6–8 日，香港理工大学）作报告，介绍以蛋白质基因组学解析暗微蛋白组的研究。",
+    "images": [
+      {
+        "src": "images/news/2026-11-07-wcmsc-talk.jpg",
+        "caption": {
+          "en": "Dr. ZHAO Qian speaking at WCMSC 2026",
+          "zh": "赵倩老师在 WCMSC 2026 作报告"
+        },
+        "alt": {
+          "en": "Dr. ZHAO Qian presenting in front of a screen at WCMSC 2026",
+          "zh": "赵倩老师在 WCMSC 2026 屏幕前作报告"
+        }
+      }
+    ]
+  },
+  {
     "date": "2026-10-05",
     "en": "Dr. QIAO Sitan joins the lab as a Postdoctoral Fellow.",
     "zh": "乔斯坦博士以博士后研究员身份加入课题组。"
+  },
+  {
+    "date": "2026-10-01",
+    "en": "Dr. ZHAO Qian takes part in the panel discussion at the 25th HUPO World Congress (Singapore, 27 September – 1 October 2026), where the lab also presents its poster on chemical proteogenomics of the sORF-encoded proteome.",
+    "zh": "赵倩老师参加在新加坡举行的第 25 届国际人类蛋白质组组织（HUPO）世界大会（2026 年 9 月 27 日–10 月 1 日），参与大会圆桌讨论；课题组同时在会上展示了 sORF 编码蛋白质组的化学蛋白质基因组学壁报。",
+    "images": [
+      {
+        "src": "images/news/2026-10-01-hupo-panel.jpg",
+        "caption": {
+          "en": "Dr. ZHAO Qian at the HUPO 2026 panel discussion",
+          "zh": "赵倩老师参加 HUPO 2026 圆桌讨论"
+        },
+        "alt": {
+          "en": "Dr. ZHAO Qian seated on the panel at HUPO 2026",
+          "zh": "赵倩老师出席 HUPO 2026 圆桌讨论"
+        }
+      },
+      {
+        "src": "images/news/2026-10-01-hupo-poster.jpg",
+        "caption": {
+          "en": "At the lab's poster on chemical proteogenomics at HUPO 2026",
+          "zh": "课题组在 HUPO 2026 的化学蛋白质基因组学壁报"
+        },
+        "alt": {
+          "en": "Researchers in front of the lab's poster at HUPO 2026",
+          "zh": "研究人员在 HUPO 2026 课题组壁报前"
+        }
+      }
+    ]
   },
   {
     "date": "2026-09-29",
