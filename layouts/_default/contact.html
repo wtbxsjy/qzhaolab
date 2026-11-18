@@ -10,7 +10,7 @@
     <dt>{{ i18n "lab" }}</dt>
     <dd>{{ partial "l.html" $c.lab }}</dd>
     <dt>{{ i18n "email" }}</dt>
-    <dd><a href="mailto:{{ $c.email }}">{{ $c.email }}</a></dd>
+    <dd>{{ partial "email.html" . }}</dd>
   </dl>
   {{ with $c.mapUrl }}<a class="more" href="{{ . }}">{{ i18n "viewMap" }} →</a>{{ end }}
 </article>

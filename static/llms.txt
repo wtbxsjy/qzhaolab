@@ -1,0 +1,20 @@
+# The QZhao Lab (赵倩课题组)
+
+> Research group of Dr. Zhao Qian (Qian Zhao, 赵倩), Associate Professor, Department of Life Sciences, The Hong Kong Polytechnic University (PolyU), Hong Kong. The lab works at the interface of chemical biology and mass spectrometry-based proteomics, and discovers and characterizes natural peptides in human cells.
+
+Research focus:
+- Functional peptides and microproteins encoded by small open reading frames (sORFs), studied by proteogenomics
+- Immunopeptides presented by HLA molecules, including non-canonical peptides, and tumor immunotherapy
+
+Principal investigator: Dr. Zhao Qian. B.Sc. Xi'an Jiaotong University; Ph.D. The University of Hong Kong; postdoc University of California, San Francisco. Member, American Society for Mass Spectrometry; editorial board, Molecular & Cellular Proteomics and Chinese Chemical Letters; Council member (Eastern Region), Human Proteome Organization (HUPO). ORCID: https://orcid.org/0000-0003-2244-6516
+
+Location: Block Y, Lee Shau Kee Building, PolyU, Hung Hom, Kowloon, Hong Kong. Contact: https://qzhaolab.com/contact/
+
+## Pages
+- [Research](https://qzhaolab.com/research/)
+- [Team](https://qzhaolab.com/team/)
+- [Publications](https://qzhaolab.com/publications/)
+- [News](https://qzhaolab.com/news/)
+- [Join Us](https://qzhaolab.com/join/)
+- [Contact](https://qzhaolab.com/contact/)
+- [中文版](https://qzhaolab.com/zh/)

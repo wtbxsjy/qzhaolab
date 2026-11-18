@@ -109,8 +109,8 @@
           },
           "items": [
             {
-              "en": "Email your curriculum vitae and a cover letter stating your earliest available start date to [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk).",
-              "zh": "请将个人简历和申请信（注明最早可到岗时间）发送至 [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk)。"
+              "en": "Email your curriculum vitae and a cover letter stating your earliest available start date to %EMAIL%.",
+              "zh": "请将个人简历和申请信（注明最早可到岗时间）发送至 %EMAIL%。"
             },
             {
               "en": "Subject line: \"Postdoctoral application – Name – Field – Institution of your PhD\".",
@@ -221,8 +221,8 @@
           },
           "items": [
             {
-              "en": "Email your cover letter and curriculum vitae to Dr. Zhao at [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk).",
-              "zh": "请将申请信和简历发送至赵老师邮箱 [q.zhao@polyu.edu.hk](mailto:q.zhao@polyu.edu.hk)。"
+              "en": "Email your cover letter and curriculum vitae to Dr. Zhao at %EMAIL%.",
+              "zh": "请将申请信和简历发送至赵老师邮箱 %EMAIL%。"
             },
             {
               "en": "Subject line: \"2027 PhD application – Name – Highest degree\".",

@@ -1,0 +1,4 @@
+{{/* Context: a bilingual text object. Returns it as HTML, with the token %EMAIL% replaced by the e-mail link
+     (see email.html), so data files never contain the address itself. */}}
+{{ $html := partial "l.html" . | markdownify }}
+{{ return (replace $html "%EMAIL%" (partial "email.html" . | string) | safeHTML) }}

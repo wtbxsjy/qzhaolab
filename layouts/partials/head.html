@@ -1,9 +1,9 @@
 {{ $s := site.Data.site }}
 {{ $lab := partial "l.html" $s.labName }}
-{{ $desc := partial "l.html" $s.description }}
+{{ $desc := .Description | default (partial "l.html" $s.description) }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ if .IsHome }}{{ $lab }} · {{ partial "l.html" $s.tagline }}{{ else }}{{ .Title }} · {{ $lab }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ i18n "homeTitle" }}{{ else }}{{ .Title }} · {{ $lab }}{{ if eq site.Language.Lang "zh" }} · {{ else }}, {{ end }}{{ i18n "titleSuffix" }}{{ end }}</title>
 <meta name="description" content="{{ $desc }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ $lab }}{{ else }}{{ .Title }} · {{ $lab }}{{ end }}">
 <meta property="og:description" content="{{ $desc }}">
@@ -12,7 +12,66 @@
 {{ with $s.heroImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{ if eq .Language.Lang "en" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">{{ end }}
 {{ end }}
+<link rel="canonical" href="{{ .Permalink }}">
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 <script src="{{ "js/lightbox.js" | relURL }}" defer></script>
+<script src="{{ "js/email.js" | relURL }}" defer></script>
+{{ if .IsHome }}
+{{ $base := site.BaseURL }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ResearchOrganization",
+      "@id": "{{ $base }}#lab",
+      "name": "The QZhao Lab",
+      "alternateName": ["Zhao Qian Lab", "Qian Zhao Lab", "Dr. Zhao Qian Research Group", "赵倩课题组"],
+      "url": "{{ $base }}",
+      "foundingDate": "2017-10",
+      "founder": { "@id": "{{ $base }}#zhao-qian" },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Department of Life Sciences, The Hong Kong Polytechnic University",
+        "url": "https://www.polyu.edu.hk/ls/"
+      },
+      "knowsAbout": ["Chemical biology", "Proteomics", "Chemical proteomics", "Mass spectrometry",
+                     "Proteogenomics", "Microproteins", "Small open reading frames (sORF)",
+                     "Immunopeptidomics", "HLA peptides"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Block Y, Lee Shau Kee Building, The Hong Kong Polytechnic University",
+        "addressLocality": "Hung Hom, Kowloon",
+        "addressRegion": "Hong Kong",
+        "addressCountry": "HK"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ $base }}#zhao-qian",
+      "name": "Zhao Qian",
+      "alternateName": ["Qian Zhao", "Dr. ZHAO Qian", "赵倩", "趙倩"],
+      "jobTitle": "Associate Professor",
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "The Hong Kong Polytechnic University",
+        "alternateName": "PolyU",
+        "url": "https://www.polyu.edu.hk/"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "The University of Hong Kong" },
+        { "@type": "CollegeOrUniversity", "name": "Xi'an Jiaotong University" },
+        { "@type": "CollegeOrUniversity", "name": "University of California, San Francisco" }
+      ],
+      "sameAs": [
+        "https://orcid.org/0000-0003-2244-6516",
+        "https://www.polyu.edu.hk/en/ls/people/academic-staff/prof-zhao-qian/"
+      ]
+    }
+  ]
+}
+</script>
+{{ end }}

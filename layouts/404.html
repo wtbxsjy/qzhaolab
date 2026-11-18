@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="container section">
+  <header class="page-head">
+    <h1 class="page-title">{{ i18n "notFoundTitle" }}</h1>
+  </header>
+  <div class="prose">
+    <p>{{ i18n "notFoundText" }}</p>
+    <p><a href="{{ "/" | relLangURL }}">{{ i18n "backHome" }} →</a></p>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,3 @@
+{{/* Prints the contact e-mail address without putting the whole address in the page source.
+     The browser joins the two halves with static/js/email.js; without JavaScript the visitor sees "name [at] domain". */}}
+{{ $c := site.Data.site.contact }}<a class="js-email" href="#" data-u="{{ $c.emailUser }}" data-d="{{ $c.emailDomain }}">{{ $c.emailUser }} [at] {{ $c.emailDomain }}</a>

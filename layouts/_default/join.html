@@ -5,21 +5,21 @@
     <h1 class="page-title">{{ .Title }}</h1>
   </header>
   <div class="prose">
-    <p>{{ partial "l.html" $j.intro | markdownify }}</p>
+    <p>{{ partial "md-email.html" $j.intro }}</p>
 
     {{ with $j.howToApply }}
       <h2>{{ partial "l.html" .heading }}</h2>
-      <p>{{ partial "l.html" .text | markdownify }}</p>
+      <p>{{ partial "md-email.html" .text }}</p>
     {{ end }}
 
     {{ range $j.positions }}
       <section class="position">
         <h2>{{ partial "l.html" .title }}{{ with .status }} <span class="position-status">{{ partial "l.html" . }}</span>{{ end }}</h2>
-        {{ with .lead }}<p>{{ partial "l.html" . | markdownify }}</p>{{ end }}
+        {{ with .lead }}<p>{{ partial "md-email.html" . }}</p>{{ end }}
         {{ range .groups }}
           <p><strong>{{ partial "l.html" .heading }}</strong></p>
           <ul>
-            {{ range .items }}<li>{{ partial "l.html" . | markdownify }}</li>{{ end }}
+            {{ range .items }}<li>{{ partial "md-email.html" . }}</li>{{ end }}
           </ul>
         {{ end }}
       </section>
@@ -27,12 +27,12 @@
 
     {{ with $j.environment }}
       <h2>{{ partial "l.html" .heading }}</h2>
-      {{ partial "l.html" .text | markdownify }}
+      {{ partial "md-email.html" .text }}
     {{ end }}
 
     {{ with $j.funding }}
       <h2>{{ partial "l.html" .heading }}</h2>
-      <p>{{ partial "l.html" .text | markdownify }}</p>
+      <p>{{ partial "md-email.html" .text }}</p>
     {{ end }}
   </div>
   {{ partial "notes.html" $j.notes }}
