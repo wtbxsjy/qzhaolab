@@ -51,8 +51,9 @@ if site:
     for k in ("labName", "tagline", "summary"):
         bilingual(site.get(k), f"site.json → {k}")
     image(site.get("heroImage"), "site.json → heroImage")
-    if not site.get("contact", {}).get("email"):
-        problems.append("site.json → contact.email is required")
+    contact = site.get("contact", {})
+    if not contact.get("emailUser") or not contact.get("emailDomain"):
+        problems.append("site.json → contact.emailUser and contact.emailDomain are required (the address is split so it is not published in one piece)")
 
 research = load("research.json")
 if research:

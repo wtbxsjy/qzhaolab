@@ -12,9 +12,18 @@
     "zh": "香港理工大学生命科学系赵倩课题组，致力于发现与解析人类细胞中的天然肽。"
   },
   "affiliation": {
-    "department": { "en": "Department of Life Sciences", "zh": "生命科学系" },
-    "faculty": { "en": "Faculty of Science", "zh": "理学院" },
-    "university": { "en": "The Hong Kong Polytechnic University", "zh": "香港理工大学" },
+    "department": {
+      "en": "Department of Life Sciences",
+      "zh": "生命科学系"
+    },
+    "faculty": {
+      "en": "Faculty of Science",
+      "zh": "理学院"
+    },
+    "university": {
+      "en": "The Hong Kong Polytechnic University",
+      "zh": "香港理工大学"
+    },
     "departmentUrl": "https://www.polyu.edu.hk/ls/"
   },
   "heroImage": "images/hero-bg.jpg",
@@ -24,7 +33,8 @@
   },
   "homeNewsCount": 3,
   "contact": {
-    "email": "q.zhao@polyu.edu.hk",
+    "emailUser": "q.zhao",
+    "emailDomain": "polyu.edu.hk",
     "office": {
       "en": "Room Y846, 8/F, Block Y, Lee Shau Kee Building, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong",
       "zh": "香港九龙红磡 香港理工大学 李兆基楼 Y 座 8 楼 Y846 室"
@@ -34,7 +44,9 @@
       "zh": "香港九龙红磡 香港理工大学 李兆基楼 Y 座 12 楼 Y1202 室"
     },
     "mapUrl": "https://www.openstreetmap.org/?mlat=22.3061&mlon=114.1807#map=17/22.3061/114.1807",
-    "staffPage": "https://www.polyu.edu.hk/en/abct/people/academic-staff/prof-zhao-qian"
+    "staffPage": "https://www.polyu.edu.hk/en/ls/people/academic-staff/prof-zhao-qian/"
   },
-  "highlightAuthors": ["Zhao Q"]
+  "highlightAuthors": [
+    "Zhao Q"
+  ]
 }
